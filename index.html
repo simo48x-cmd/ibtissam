@@ -1,0 +1,2817 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBTISSAM // 76→60 RECOMP STUDIO | مساحة إبتسام الخاصة</title>
+  <meta name="description" content="مساحة إبتسام (Ibtissam) الخاصة — برنامج إعادة تشكيل الجسم من 76 كغ إلى 60 كغ بميزانية طالبة مغربية، هولوغرام العضلات التفاعلي، والماكلة الاقتصادية." />
+  <meta property="og:title" content="IBTISSAM // 76→60 RECOMP STUDIO | مساحة إبتسام الخاصة" />
+  <meta property="og:description" content="مساحة إبتسام (Ibtissam) الخاصة — برنامج إعادة تشكيل الجسم من 76 كغ إلى 60 كغ بميزانية طالبة مغربية، هولوغرام العضلات التفاعلي، والماكلة الاقتصادية." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Cairo & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#07070b',
+            velvet: '#11111a',
+            softrose: '#fda4af',
+            fiercerose: '#f43f5e',
+            holocyan: '#38bdf8',
+            mint: '#34d399',
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #07070b;
+      color: #f8fafc;
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    body {
+      background-image:
+        radial-gradient(circle at 15% 12%, rgba(244, 63, 94, 0.14) 0%, transparent 38%),
+        radial-gradient(circle at 85% 18%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 50% 85%, rgba(253, 164, 175, 0.10) 0%, transparent 45%);
+      background-attachment: fixed;
+    }
+    .ltr {
+      direction: ltr;
+      unicode-bidi: embed;
+      font-family: 'Inter', sans-serif;
+      font-variant-numeric: tabular-nums;
+    }
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+    .glass-card {
+      background: rgba(17, 17, 26, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(253, 164, 175, 0.18);
+      box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.65);
+    }
+    .glass-card-subtle {
+      background: rgba(17, 17, 26, 0.58);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-rose {
+      background: linear-gradient(135deg, rgba(244, 63, 94, 0.14) 0%, rgba(17, 17, 26, 0.85) 100%);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(244, 63, 94, 0.32);
+    }
+    .glass-card-cyan {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.12) 0%, rgba(17, 17, 26, 0.85) 100%);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+    }
+
+    /* Water Cups Liquid Animation */
+    .water-cup {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .water-cup:hover {
+      transform: translateY(-2px);
+    }
+    .water-cup.filled {
+      border-color: #38bdf8;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.28), inset 0 0 12px rgba(244, 63, 94, 0.22);
+      background: linear-gradient(180deg, rgba(56, 189, 248, 0.28) 0%, rgba(244, 63, 94, 0.34) 100%);
+    }
+
+    /* Hologram Stage & Laser Scanline */
+    .holo-stage {
+      position: relative;
+      background:
+        linear-gradient(rgba(253, 164, 175, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+        radial-gradient(circle at 50% 45%, rgba(244, 63, 94, 0.16) 0%, rgba(56, 189, 248, 0.08) 42%, rgba(7, 7, 11, 0.95) 78%);
+      background-size: 24px 24px, 24px 24px, 100% 100%;
+    }
+    @keyframes holoScan {
+      0% { top: 4%; opacity: 0.35; }
+      50% { top: 92%; opacity: 0.9; }
+      100% { top: 4%; opacity: 0.35; }
+    }
+    .holo-scanline {
+      position: absolute;
+      left: 6%;
+      right: 6%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, #38bdf8 25%, #f43f5e 50%, #fda4af 75%, transparent 100%);
+      box-shadow: 0 0 12px #f43f5e, 0 0 20px #38bdf8;
+      pointer-events: none;
+      animation: holoScan 5.5s ease-in-out infinite;
+      z-index: 10;
+    }
+
+    /* SVG Muscle Group Paths */
+    .muscle-zone {
+      cursor: pointer;
+      fill: rgba(253, 164, 175, 0.18);
+      stroke: rgba(253, 164, 175, 0.55);
+      stroke-width: 1.5;
+      transition: fill 0.2s ease, stroke 0.2s ease, filter 0.2s ease;
+    }
+    .muscle-zone:hover {
+      fill: rgba(56, 189, 248, 0.45);
+      stroke: #38bdf8;
+      filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.7));
+    }
+    .muscle-zone.active-muscle {
+      fill: rgba(244, 63, 94, 0.68);
+      stroke: #fda4af;
+      stroke-width: 2.2;
+      filter: drop-shadow(0 0 12px rgba(244, 63, 94, 0.9));
+    }
+
+    /* Custom Range Slider */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background: rgba(255, 255, 255, 0.12);
+      height: 8px;
+      border-radius: 999px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #f43f5e;
+      border: 2px solid #fda4af;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(244, 63, 94, 0.8);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07070b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(253, 164, 175, 0.25);
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(244, 63, 94, 0.55);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-fiercerose selection:text-white">
+
+  <!-- Toast Notification Banner -->
+  <div id="toast-container" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 opacity-0 translate-y-4 max-w-md w-[92%]" role="status" aria-live="polite">
+    <div id="toast-card" class="glass-card border-fiercerose/50 rounded-2xl px-5 py-3.5 flex items-center justify-between gap-3 shadow-2xl">
+      <div class="flex items-center gap-3">
+        <span id="toast-icon" class="text-xl">✨</span>
+        <p id="toast-message" class="text-sm font-bold text-white leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Navigation Header -->
+  <header class="sticky top-0 z-40 glass-card border-t-0 border-x-0 border-b border-softrose/20 px-4 lg:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <!-- Brand Zone -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-fiercerose to-softrose flex items-center justify-center text-obsidian font-black text-lg shadow-lg shadow-fiercerose/25 ltr">
+          IB
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="ltr text-xs md:text-sm font-extrabold tracking-wider text-softrose">IBTISSAM // 76→60 RECOMP STUDIO</span>
+          </div>
+          <h1 class="text-base md:text-lg font-black text-white leading-tight">مساحة إبتسام (Ibtissam) الخاصة</h1>
+        </div>
+      </div>
+
+      <!-- Athlete Quick Specs (Unboxed Metadata with Separators) -->
+      <div class="hidden xl:flex items-center gap-2.5 text-xs font-bold text-slate-300">
+        <span>العمر: <strong class="ltr text-white">20</strong> سنة</span>
+        <span aria-hidden="true" class="text-softrose/50">·</span>
+        <span>الطول: <strong class="ltr text-white">164 cm</strong></span>
+        <span aria-hidden="true" class="text-softrose/50">·</span>
+        <span>الهدف: <strong class="ltr text-softrose">76.0 kg → 60.0 kg</strong></span>
+        <span aria-hidden="true" class="text-softrose/50">·</span>
+        <span>البروتين: <strong class="ltr text-mint">95g–100g</strong></span>
+        <span aria-hidden="true" class="text-softrose/50">·</span>
+        <span>الميزانية: <strong class="ltr text-holocyan">12–17 DH/day</strong></span>
+      </div>
+
+      <!-- Header Controls: Streak Counter + Audio Toggle -->
+      <div class="flex items-center gap-2.5">
+        <div class="glass-card-subtle px-3.5 py-1.5 rounded-xl flex items-center gap-2 border border-softrose/25" title="سلسلة أيام الالتزام">
+          <span class="text-base">🔥</span>
+          <span class="text-xs font-bold text-slate-300">أيام الالتزام:</span>
+          <span id="header-streak-count" class="ltr text-sm font-black text-softrose">0</span>
+        </div>
+
+        <button id="audio-toggle-btn" type="button" onclick="toggleAudioMute()" class="min-h-[40px] px-3.5 py-1.5 rounded-xl glass-card-subtle hover:border-softrose/40 text-xs font-bold text-slate-200 flex items-center gap-1.5 transition-colors whitespace-nowrap shrink-0" aria-label="تبديل الصوت">
+          <span id="audio-toggle-icon">🔊</span>
+          <span id="audio-toggle-label" class="hidden sm:inline">الصوت مفعل</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Workspace Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-6">
+
+    <!-- Compact Personalized Hero Strip -->
+    <section class="glass-card rounded-3xl p-5 lg:p-6 relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+        <div class="space-y-2 max-w-3xl">
+          <div class="text-xs font-bold text-softrose tracking-wide">
+            برنامج إعادة تشكيل الجسم (Body Recomposition) · مصمم خصيصاً لإبتسام · ميزانية طالبة مغربية
+          </div>
+          <h2 class="text-2xl lg:text-3xl font-black text-white leading-snug">
+            مرحبا إبتسام — من <span class="ltr text-fiercerose">76.0 kg</span> لـ <span class="ltr text-mint">60.0 kg</span> بعلم التغذية والمقاومة بلا حرمان وبلا مصاريف زايدة
+          </h2>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            هاد الاستوديو الرقمي مبني على مقاساتك الحقيقية (<span class="ltr font-bold text-white">20 yo · 164 cm</span>) وعلى الواقع ديالك كطالبة: <strong class="text-softrose">95g تال 100g بروتين ف النهار</strong> من ماكلة الدار الرخيصة، <strong class="text-holocyan">كاربز هابطة ونقية (70g–80g)</strong> باش تحيدي النفخة وتسرعي حرق الشحمة، وتمرين ذكي ف الدار أو لاصال.
+          </p>
+        </div>
+
+        <!-- Scientific Target Summary Strip -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-2.5 shrink-0 lg:w-80">
+          <div class="glass-card-subtle rounded-2xl p-3">
+            <div class="text-[11px] text-slate-400 font-bold">البروتين اليومي</div>
+            <div class="ltr text-base font-black text-mint mt-0.5">95g – 100g</div>
+            <div class="text-[11px] text-slate-400">~1.6g/kg من وزن الهدف</div>
+          </div>
+          <div class="glass-card-subtle rounded-2xl p-3">
+            <div class="text-[11px] text-slate-400 font-bold">الكاربز اليومية</div>
+            <div class="ltr text-base font-black text-holocyan mt-0.5">70g – 80g</div>
+            <div class="text-[11px] text-slate-400">0 خبز و0 سكر بالليل</div>
+          </div>
+          <div class="glass-card-subtle rounded-2xl p-3">
+            <div class="text-[11px] text-slate-400 font-bold">السعرات والدهون</div>
+            <div class="ltr text-base font-black text-softrose mt-0.5">~1,380 kcal</div>
+            <div class="text-[11px] text-slate-400">45g–50g دهون صحية</div>
+          </div>
+          <div class="glass-card-subtle rounded-2xl p-3">
+            <div class="text-[11px] text-slate-400 font-bold">التكلفة اليومية</div>
+            <div class="ltr text-base font-black text-white mt-0.5">12 – 17 DH</div>
+            <div class="text-[11px] text-slate-400">مكونات مغربية 100%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Interactive Navigation Tabs -->
+    <nav aria-label="أقسام استوديو إبتسام" class="glass-card rounded-2xl p-1.5 flex items-center gap-1.5 overflow-x-auto">
+      <button type="button" id="tab-btn-1" onclick="switchTab(1)" class="tab-nav-btn flex-1 min-h-[44px] px-4 py-2.5 rounded-xl text-xs md:text-sm font-extrabold transition-all whitespace-nowrap shrink-0 bg-fiercerose text-white shadow-lg shadow-fiercerose/30">
+        1. تشيك أوت النهار & محطة الماء
+      </button>
+      <button type="button" id="tab-btn-2" onclick="switchTab(2)" class="tab-nav-btn flex-1 min-h-[44px] px-4 py-2.5 rounded-xl text-xs md:text-sm font-extrabold transition-all whitespace-nowrap shrink-0 text-slate-300 hover:text-white hover:bg-white/5">
+        2. هولوغرام العضلات 3D & يوتيوب
+      </button>
+      <button type="button" id="tab-btn-3" onclick="switchTab(3)" class="tab-nav-btn flex-1 min-h-[44px] px-4 py-2.5 rounded-xl text-xs md:text-sm font-extrabold transition-all whitespace-nowrap shrink-0 text-slate-300 hover:text-white hover:bg-white/5">
+        3. الماكلة الاقتصادية لطالبة
+      </button>
+      <button type="button" id="tab-btn-4" onclick="switchTab(4)" class="tab-nav-btn flex-1 min-h-[44px] px-4 py-2.5 rounded-xl text-xs md:text-sm font-extrabold transition-all whitespace-nowrap shrink-0 text-slate-300 hover:text-white hover:bg-white/5">
+        4. جدول السيمانة (7 أيام) & التايمر
+      </button>
+      <button type="button" id="tab-btn-5" onclick="switchTab(5)" class="tab-nav-btn flex-1 min-h-[44px] px-4 py-2.5 rounded-xl text-xs md:text-sm font-extrabold transition-all whitespace-nowrap shrink-0 text-slate-300 hover:text-white hover:bg-white/5">
+        5. مختبر السنتيم & محاكي 60 kg
+      </button>
+    </nav>
+
+    <!-- ==================================================================== -->
+    <!-- TAB 1: تشيك أوت النهار & محطة الماء (Daily Checkout, 3.5L Hydration & Weight Tracker) -->
+    <!-- ==================================================================== -->
+    <section id="tab-panel-1" class="space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+
+        <!-- 1. Weight Recomposition Hero Card (76.0 kg -> 60.0 kg) -->
+        <div class="lg:col-span-5 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-bold text-softrose">تتبع الوزن وإعادة تشكيل الجسم</span>
+                <h3 class="text-xl font-black text-white mt-0.5">رحلة <span class="ltr">76.0 kg → 60.0 kg</span></h3>
+              </div>
+              <div class="text-left">
+                <span class="text-[11px] text-slate-400 block">نسبة الإنجاز</span>
+                <span id="weight-progress-pct" class="ltr text-2xl font-black text-mint">0%</span>
+              </div>
+            </div>
+
+            <!-- 4 KPI Stat Boxes -->
+            <div class="grid grid-cols-2 gap-3">
+              <div class="glass-card-subtle rounded-2xl p-3.5">
+                <span class="text-xs text-slate-400 font-bold block">الوزن الحالي</span>
+                <div class="flex items-baseline gap-1 mt-1">
+                  <span id="stat-current-weight" class="ltr text-2xl font-black text-white">76.0</span>
+                  <span class="ltr text-xs font-bold text-slate-400">kg</span>
+                </div>
+              </div>
+              <div class="glass-card-subtle rounded-2xl p-3.5">
+                <span class="text-xs text-slate-400 font-bold block">شحال باقي للهدف (60 kg)</span>
+                <div class="flex items-baseline gap-1 mt-1">
+                  <span id="stat-remaining-weight" class="ltr text-2xl font-black text-softrose">16.0</span>
+                  <span class="ltr text-xs font-bold text-slate-400">kg</span>
+                </div>
+              </div>
+              <div class="glass-card-subtle rounded-2xl p-3.5">
+                <span class="text-xs text-slate-400 font-bold block">مجموع الوزن اللي طاح</span>
+                <div class="flex items-baseline gap-1 mt-1">
+                  <span id="stat-lost-weight" class="ltr text-2xl font-black text-mint">0.0</span>
+                  <span class="ltr text-xs font-bold text-slate-400">kg</span>
+                </div>
+              </div>
+              <div class="glass-card-subtle rounded-2xl p-3.5">
+                <span class="text-xs text-slate-400 font-bold block">مؤشر الكتلة (BMI)</span>
+                <div class="flex items-baseline gap-1.5 mt-1">
+                  <span id="stat-current-bmi" class="ltr text-xl font-black text-holocyan">28.3</span>
+                  <span class="ltr text-xs font-bold text-slate-400">→ 22.3</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Animated Gradient Progress Bar -->
+            <div class="space-y-1.5 pt-1">
+              <div class="flex justify-between text-xs font-bold text-slate-300 ltr">
+                <span>START: 76.0 kg (BMI 28.3)</span>
+                <span>GOAL: 60.0 kg (BMI 22.3)</span>
+              </div>
+              <div class="w-full h-4 rounded-full bg-white/10 overflow-hidden p-0.5">
+                <div id="weight-progress-bar" class="h-full rounded-full bg-gradient-to-l from-mint via-holocyan to-fiercerose transition-all duration-500" style="width: 2%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weight Input Form -->
+          <div class="pt-3 border-t border-white/10 space-y-2.5">
+            <label for="new-weight-input" class="block text-xs font-bold text-slate-200">
+              سجلي وزنك الجديد الصباح على الريق (كغ):
+            </label>
+            <div class="flex items-center gap-2.5">
+              <input
+                id="new-weight-input"
+                type="number"
+                step="0.1"
+                min="45"
+                max="120"
+                placeholder="76.0"
+                class="ltr flex-1 min-h-[44px] rounded-xl bg-obsidian/90 border border-softrose/30 px-4 py-2 text-base font-bold text-white focus:outline-none focus:border-fiercerose"
+              />
+              <button
+                type="button"
+                id="save-weight-btn"
+                onclick="handleSaveWeight()"
+                class="min-h-[44px] px-5 py-2 rounded-xl bg-fiercerose hover:bg-fiercerose/90 text-white font-extrabold text-sm transition-all whitespace-nowrap shrink-0 shadow-lg shadow-fiercerose/25"
+              >
+                حفظ الوزن
+              </button>
+            </div>
+            <p id="weight-feedback-msg" class="text-xs text-slate-400">
+              نصيحة: تعبري غير مرة وحدة ف السيمانة (الأحد الصباح على الريق بعد الطواليط).
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. High-Hydration Station (3.5 Liters / 3,500 ml Daily Goal) -->
+        <div class="lg:col-span-7 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <span class="text-xs font-bold text-holocyan">محطة الترطيب العالي وتصفية احتباس السوائل</span>
+                <h3 class="text-xl font-black text-white mt-0.5">هدف الماء اليومي: <span class="ltr text-holocyan">3.5 Liters (3,500 ml)</span></h3>
+              </div>
+              <div class="glass-card-subtle px-4 py-2 rounded-2xl border border-holocyan/30 text-left">
+                <span id="water-ml-display" class="ltr text-xl font-black text-holocyan">0 / 3500 ml</span>
+                <span id="water-cups-display" class="block text-[11px] font-bold text-slate-300">0 من 14 كاس (250 ml للكاس)</span>
+              </div>
+            </div>
+
+            <!-- Progress bar for water -->
+            <div class="w-full h-3 rounded-full bg-white/10 overflow-hidden">
+              <div id="water-progress-bar" class="h-full rounded-full bg-gradient-to-l from-holocyan to-fiercerose transition-all duration-300" style="width: 0%;"></div>
+            </div>
+
+            <!-- 14 Interactive Cups Grid (250ml each = 3,500ml) -->
+            <div id="water-cups-grid" class="grid grid-cols-7 sm:grid-cols-7 gap-2.5 pt-1" role="group" aria-label="كيسان الماء الـ 14">
+              <!-- Populated dynamically via JS -->
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex flex-wrap items-center gap-2.5 pt-1">
+              <button type="button" onclick="adjustWaterCups(1)" class="min-h-[42px] px-4 py-2 rounded-xl bg-holocyan/20 hover:bg-holocyan/30 border border-holocyan/40 text-holocyan font-extrabold text-xs transition-all whitespace-nowrap shrink-0">
+                + كاس (<span class="ltr">250 ml</span>)
+              </button>
+              <button type="button" onclick="adjustWaterCups(2)" class="min-h-[42px] px-4 py-2 rounded-xl bg-fiercerose/20 hover:bg-fiercerose/30 border border-fiercerose/40 text-softrose font-extrabold text-xs transition-all whitespace-nowrap shrink-0">
+                + قرعة (<span class="ltr">500 ml</span>)
+              </button>
+              <button type="button" onclick="adjustWaterCups(-1)" class="min-h-[42px] px-3.5 py-2 rounded-xl glass-card-subtle hover:border-white/30 text-slate-300 font-bold text-xs transition-all whitespace-nowrap shrink-0 ltr">
+                -250 ml
+              </button>
+              <button type="button" onclick="resetWaterCups()" class="min-h-[42px] px-3.5 py-2 rounded-xl glass-card-subtle hover:border-fiercerose/40 text-slate-400 hover:text-softrose font-bold text-xs transition-all whitespace-nowrap shrink-0">
+                تصفير
+              </button>
+            </div>
+          </div>
+
+          <!-- Water Timing Guide -->
+          <div class="glass-card-cyan rounded-2xl p-4 space-y-2">
+            <div class="text-xs font-extrabold text-holocyan">
+              💧 علاش 3.5 لتر هي السلاح السري ديالك يا إبتسام؟ (توقيت الشرب الذكي)
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs text-slate-200 leading-relaxed">
+              <div class="bg-obsidian/60 rounded-xl p-2.5 border border-white/5">
+                <strong class="text-softrose block mb-0.5">1. الصباح على الريق (2 كيسان · 500 ml):</strong>
+                كيفيق الميتابوليزم وكيجري على احتباس السوائل والنفخة ديال الصباح.
+              </div>
+              <div class="bg-obsidian/60 rounded-xl p-2.5 border border-white/5">
+                <strong class="text-holocyan block mb-0.5">2. 20 دقيقة قبل الغداء والعشاء (4 كيسان):</strong>
+                2 كيسان قبل كل وجبة كيعمروا المعدة طبيعياً وكيهبطوا الجوع بـ 40%.
+              </div>
+              <div class="bg-obsidian/60 rounded-xl p-2.5 border border-white/5">
+                <strong class="text-mint block mb-0.5">3. وقت القراية والتمرين (8 كيسان · 2L):</strong>
+                رطبي عضلاتك ودماغك طول النهار باش ما تحسيش بالعيا أو الصداع.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 3. Daily Objectives Checklist (6 Core Habits) & End-of-Day Checkout + 4. SOS Study Craving Card -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+
+        <!-- 6 Core Habits & Checkout -->
+        <div class="lg:col-span-7 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-bold text-softrose">المهمات الـ 6 ديال النهار</span>
+                <h3 class="text-xl font-black text-white mt-0.5">تشيك أوت الالتزام اليومي (Daily Checkout)</h3>
+              </div>
+              <span id="habits-counter-badge" class="ltr text-sm font-black text-mint">0 / 6 مكتملة</span>
+            </div>
+
+            <!-- 6 Interactive Task Cards -->
+            <div id="daily-habits-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+
+          <!-- 14-Day Consistency Streak Grid & Checkout CTA -->
+          <div class="pt-4 border-t border-white/10 space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between text-xs font-bold">
+                <span class="text-slate-300">شبكة الاستمرارية (14 يوم ديال التحدي):</span>
+                <span id="streak-grid-summary" class="text-softrose">كملي النهار باش تشعلي الحلقة الجاية!</span>
+              </div>
+              <div id="streak-14-grid" class="grid grid-cols-7 sm:grid-cols-14 gap-2">
+                <!-- 14 circles populated by JS -->
+              </div>
+            </div>
+
+            <button
+              type="button"
+              id="daily-checkout-btn"
+              onclick="completeDailyCheckout()"
+              class="w-full min-h-[50px] py-3.5 px-6 rounded-2xl bg-gradient-to-r from-fiercerose via-pink-600 to-softrose hover:opacity-95 text-white font-black text-base shadow-xl shadow-fiercerose/30 transition-all active:scale-[0.99]"
+            >
+              تأكيد النهار — Checkout اليوم 🔥
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. SOS Late-Night Study Craving Card -->
+        <div class="lg:col-span-5 glass-card-rose rounded-3xl p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="text-xs font-extrabold text-softrose">
+              انقاذ السهر والامتحانات · Zero Carbs At Night
+            </div>
+            <h3 class="text-xl font-black text-white leading-snug">
+              🎓 وضع القراية والسهر بلا ما تخسري الريجيم
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              فاش تكوني سهرانة كتقراي بالليل ويجيك الجوع مع <span class="ltr font-bold text-white">11:30 PM</span>، إياك تمشي للخبز أو السكر أو البسكوي! هاد 4 ديال الاختيارات كيسدوا الشهية بـ <span class="ltr font-bold text-mint">0g Carbs</span> وبأقل من درهمين:
+            </p>
+
+            <div class="space-y-2.5 pt-1">
+              <div class="glass-card-subtle rounded-2xl p-3.5 border border-softrose/20">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-extrabold text-sm text-white">1. خيار مقطع بالملحة والزعتر</span>
+                  <span class="ltr text-xs font-black text-mint">~15 kcal · 0g Carbs</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1">قرمشة منعشة كتعمر المعدة بالماء والألياف والزعتر كيرخي الأعصاب.</p>
+              </div>
+
+              <div class="glass-card-subtle rounded-2xl p-3.5 border border-softrose/20">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-extrabold text-sm text-white">2. براد أتاي أو بابونج/زعيترة بلا سكر</span>
+                  <span class="ltr text-xs font-black text-holocyan">0 kcal · 0g Sugar</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1">مشروب سخون كيسد الشهية بالليل وكيعاونك تركزي ف القراية بلا ما يطلع الأنسولين.</p>
+              </div>
+
+              <div class="glass-card-subtle rounded-2xl p-3.5 border border-softrose/20">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-extrabold text-sm text-white">3. 2 بياض بيض مسلوقين بالكامون</span>
+                  <span class="ltr text-xs font-black text-softrose">34 kcal · 7g Protein · 0g Carbs</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1">إلا كان جوع بصح، بياض البيض بروتين صافي كيشبع ويحافظ على العضلات وأنتِ ناعسة.</p>
+              </div>
+
+              <div class="glass-card-subtle rounded-2xl p-3.5 border border-softrose/20">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-extrabold text-sm text-white">4. ياغورت طبيعي مسوس مع القرفة</span>
+                  <span class="ltr text-xs font-black text-mint">~60 kcal · 4g Protein</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1">القرفة كتريكل سكر الدم وكتعطيك مذاق حلو طبيعي بلا غرام ديال السكر.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-obsidian/80 rounded-2xl p-3.5 border border-white/10 text-xs text-slate-300">
+            💡 <strong class="text-white">قاعدة ذهبية لإبتسام:</strong> إلى جاك الجوع بالليل، شربي كاس كبير ديال الماء دافي هو الأول وتسناي 10 دقايق — ف 80% من المرات كيكون غير عطش وإرهاق ديال القراية!
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- TAB 2: هولوغرام العضلات 3D & يوتيوب (Interactive Female Body Hologram + Real YouTube Tutorials) -->
+    <!-- ==================================================================== -->
+    <section id="tab-panel-2" class="hidden space-y-6">
+
+      <!-- Muscle Quick-Select Bar (All 11+1 Muscle Groups) -->
+      <div class="glass-card rounded-3xl p-5 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <span class="text-xs font-bold text-holocyan">خريطة التشريح العضلي لإعادة التشكيل (11 منطقة عضلية)</span>
+            <h3 class="text-lg font-black text-white">كليكي على أي عضلة ف الهولوغرام أو من هاد الأزرار باش تشوفي تمارينها ف لاصال أو ف الدار:</h3>
+          </div>
+          <!-- Gym vs Home Mode Switcher -->
+          <div class="flex items-center gap-1.5 bg-obsidian/90 p-1.5 rounded-2xl border border-softrose/25">
+            <button type="button" id="mode-btn-gym" onclick="setWorkoutPlaceMode('gym')" class="min-h-[40px] px-4 py-1.5 rounded-xl text-xs font-extrabold transition-all whitespace-nowrap shrink-0 bg-fiercerose text-white shadow">
+              🏋️‍♀️ لاصال (Gym)
+            </button>
+            <button type="button" id="mode-btn-home" onclick="setWorkoutPlaceMode('home')" class="min-h-[40px] px-4 py-1.5 rounded-xl text-xs font-extrabold transition-all whitespace-nowrap shrink-0 text-slate-300 hover:text-white">
+              🏠 الدار بلا معدات (Home/Dorm)
+            </button>
+          </div>
+        </div>
+
+        <!-- Muscle Selector Buttons -->
+        <div id="muscle-pills-container" class="flex flex-wrap gap-2 pt-1">
+          <!-- Populated dynamically via JS for all 11 muscle groups -->
+        </div>
+      </div>
+
+      <!-- Hologram Split View: Left/Right SVG Silhouette + Exercise Detail Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+
+        <!-- Interactive SVG Female Body Hologram -->
+        <div class="lg:col-span-5 glass-card holo-stage rounded-3xl p-6 flex flex-col justify-between items-center relative overflow-hidden min-h-[560px]">
+          <div class="holo-scanline"></div>
+
+          <!-- Top View Switcher (Back vs Front) -->
+          <div class="w-full flex items-center justify-between gap-2 z-20">
+            <span class="ltr text-xs font-black tracking-wider text-holocyan">3D BIO-HOLOGRAM // IBTISSAM</span>
+            <div class="flex items-center gap-1.5 bg-obsidian/90 p-1 rounded-xl border border-holocyan/30">
+              <button type="button" id="holo-view-back" onclick="setHologramView('back')" class="px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all bg-holocyan text-obsidian">
+                الظهر والمؤخرة (Back)
+              </button>
+              <button type="button" id="holo-view-front" onclick="setHologramView('front')" class="px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all text-slate-300 hover:text-white">
+                الواجهة الأمامية (Front)
+              </button>
+            </div>
+          </div>
+
+          <!-- SVG Container -->
+          <div class="relative flex-1 w-full flex items-center justify-center my-2 z-20">
+            <!-- Glowing Aura Rings -->
+            <div class="absolute w-64 h-64 rounded-full border border-softrose/15 pointer-events-none"></div>
+            <div class="absolute w-80 h-80 rounded-full border border-holocyan/10 pointer-events-none"></div>
+
+            <!-- BACK VIEW SVG (الظهر والمؤخرة) -->
+            <svg id="svg-hologram-back" viewBox="0 0 260 480" class="w-full max-w-[270px] h-auto select-none">
+              <!-- Base Female Silhouette Outline -->
+              <g stroke="rgba(255,255,255,0.22)" stroke-width="1.2" fill="rgba(17,17,26,0.65)">
+                <circle cx="130" cy="40" r="22" />
+                <path d="M120,62 L140,62 L144,76 L116,76 Z" />
+              </g>
+
+              <!-- 1. Traps (الترابيز وأعلى الظهر) -->
+              <path data-muscle="traps" onclick="selectMuscle('traps')" class="muscle-zone" d="M92,78 Q130,66 168,78 L152,115 Q130,124 108,115 Z">
+                <title>عضلة الترابيز وأعلى الظهر (Traps)</title>
+              </path>
+
+              <!-- 9. Delts Back (الأكتاف الخلفية والجانبية) -->
+              <path data-muscle="delts" onclick="selectMuscle('delts')" class="muscle-zone" d="M68,84 Q80,74 92,80 L96,114 Q76,116 66,104 Z M192,84 Q180,74 168,80 L164,114 Q184,116 194,104 Z">
+                <title>عضلات الأكتاف (Deltoids)</title>
+              </path>
+
+              <!-- 2. Rhomboids (العضلات المعينية وسط الظهر) -->
+              <path data-muscle="rhomboids" onclick="selectMuscle('rhomboids')" class="muscle-zone" d="M108,116 L152,116 L146,154 L114,154 Z">
+                <title>العضلات المعينية وسط الظهر (Rhomboids)</title>
+              </path>
+
+              <!-- 3. Lats (عضلات اللاتس وجناب الظهر لرسمة الخصر) -->
+              <path data-muscle="lats" onclick="selectMuscle('lats')" class="muscle-zone" d="M94,116 L113,118 L113,156 L104,178 Q92,152 94,116 Z M166,116 L147,118 L147,156 L156,178 Q168,152 166,116 Z">
+                <title>عضلات اللاتس وجناب الظهر (Latissimus Dorsi)</title>
+              </path>
+
+              <!-- 10. Arms Back (الترايسبس والذراعين) -->
+              <path data-muscle="arms" onclick="selectMuscle('arms')" class="muscle-zone" d="M66,108 L88,114 L80,185 L58,180 Z M194,108 L172,114 L180,185 L202,180 Z">
+                <title>عضلات الذراعين والترايسبس (Arms / Triceps)</title>
+              </path>
+
+              <!-- 4. Lower Back (أسفل الظهر وناصبات العمود الفقري) -->
+              <path data-muscle="lowerback" onclick="selectMuscle('lowerback')" class="muscle-zone" d="M106,156 L154,156 L160,196 Q130,204 100,196 Z">
+                <title>أسفل الظهر وناصبات العمود الفقري (Lower Back)</title>
+              </path>
+
+              <!-- 5. Glutes (عضلات المؤخرة والأرداف) -->
+              <path data-muscle="glutes" onclick="selectMuscle('glutes')" class="muscle-zone" d="M96,198 Q130,192 164,198 Q182,232 166,266 Q130,276 94,266 Q78,232 96,198 Z">
+                <title>عضلات المؤخرة والأرداف (Gluteus Maximus & Medius)</title>
+              </path>
+
+              <!-- 7. Hamstrings (الفخذ الخلفي) -->
+              <path data-muscle="hamstrings" onclick="selectMuscle('hamstrings')" class="muscle-zone" d="M88,268 L126,272 L122,356 L92,356 Q82,312 88,268 Z M172,268 L134,272 L138,356 L168,356 Q178,312 172,268 Z">
+                <title>الفخذ الخلفي (Hamstrings)</title>
+              </path>
+
+              <!-- 11b. Calves (عضلات السمانة) -->
+              <path data-muscle="calves" onclick="selectMuscle('calves')" class="muscle-zone" d="M92,362 L120,362 Q124,404 114,444 L98,444 Q86,404 92,362 Z M168,362 L140,362 Q136,404 146,444 L162,444 Q174,404 168,362 Z">
+                <title>عضلات السمانة (Calves)</title>
+              </path>
+            </svg>
+
+            <!-- FRONT VIEW SVG (الواجهة الأمامية) -->
+            <svg id="svg-hologram-front" viewBox="0 0 260 480" class="w-full max-w-[270px] h-auto select-none hidden">
+              <!-- Base Head & Neck -->
+              <g stroke="rgba(255,255,255,0.22)" stroke-width="1.2" fill="rgba(17,17,26,0.65)">
+                <circle cx="130" cy="40" r="22" />
+                <path d="M120,62 L140,62 L144,76 L116,76 Z" />
+              </g>
+
+              <!-- Traps Front Collar -->
+              <path data-muscle="traps" onclick="selectMuscle('traps')" class="muscle-zone" d="M96,76 L164,76 L154,92 L106,92 Z">
+                <title>عضلة الترابيز (Traps)</title>
+              </path>
+
+              <!-- 9. Delts Front (الأكتاف الأمامية والجانبية) -->
+              <path data-muscle="delts" onclick="selectMuscle('delts')" class="muscle-zone" d="M68,84 Q82,74 96,80 L98,114 Q76,116 66,104 Z M192,84 Q178,74 164,80 L162,114 Q184,116 194,104 Z">
+                <title>عضلات الأكتاف (Deltoids)</title>
+              </path>
+
+              <!-- 11. Chest (عضلات الصدر) -->
+              <path data-muscle="chest" onclick="selectMuscle('chest')" class="muscle-zone" d="M98,94 L162,94 L158,136 Q130,144 102,136 Z">
+                <title>عضلات الصدر والسمانة (Chest & Calves)</title>
+              </path>
+
+              <!-- 10. Arms Front (البايسبس والذراعين) -->
+              <path data-muscle="arms" onclick="selectMuscle('arms')" class="muscle-zone" d="M66,108 L88,114 L80,185 L58,180 Z M194,108 L172,114 L180,185 L202,180 Z">
+                <title>عضلات الذراعين (Arms)</title>
+              </path>
+
+              <!-- 8. Core & Waist (الحزام البطني والعضلة المستعرضة للخصر) -->
+              <path data-muscle="core" onclick="selectMuscle('core')" class="muscle-zone" d="M104,138 L156,138 L150,174 L158,208 Q130,218 102,208 L110,174 Z">
+                <title>الحزام البطني والخصر (Core & Transverse Abdominis)</title>
+              </path>
+
+              <!-- 5. Glutes / Outer Hip Curve -->
+              <path data-muscle="glutes" onclick="selectMuscle('glutes')" class="muscle-zone" d="M86,204 L102,208 L98,254 L82,248 Q78,224 86,204 Z M174,204 L158,208 L162,254 L178,248 Q182,224 174,204 Z">
+                <title>الأرداف والورك الجانبي (Glutes & Hip Curve)</title>
+              </path>
+
+              <!-- 6. Quads (الفخذ الأمامي والداخلي) -->
+              <path data-muscle="quads" onclick="selectMuscle('quads')" class="muscle-zone" d="M88,252 L126,256 L122,356 L92,356 Q80,304 88,252 Z M172,252 L134,256 L138,356 L168,356 Q180,304 172,252 Z">
+                <title>الفخذ الأمامي والداخلي (Quadriceps & Adductors)</title>
+              </path>
+
+              <!-- 12. Calves Front (عضلات السمانة) -->
+              <path data-muscle="calves" onclick="selectMuscle('calves')" class="muscle-zone" d="M92,362 L120,362 Q124,404 114,444 L98,444 Q86,404 92,362 Z M168,362 L140,362 Q136,404 146,444 L162,444 Q174,404 168,362 Z">
+                <title>عضلات السمانة (Calves)</title>
+              </path>
+            </svg>
+          </div>
+
+          <!-- Bottom Selected Muscle Indicator -->
+          <div class="w-full glass-card-subtle rounded-2xl p-3.5 text-center z-20 border border-softrose/25">
+            <div class="text-[11px] font-bold text-slate-400">العضلة المختارة دابا ف الهولوغرام:</div>
+            <div id="holo-active-muscle-title" class="text-base font-black text-softrose mt-0.5">عضلات المؤخرة والأرداف (Glutes)</div>
+          </div>
+        </div>
+
+        <!-- Selected Muscle Anatomical Role & Exercise Cards -->
+        <div class="lg:col-span-7 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <!-- Header Info -->
+            <div class="border-b border-white/10 pb-4 space-y-2">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span id="muscle-detail-badge" class="text-xs font-extrabold text-holocyan">تحديد الخصر وبناء الشكل الأنثوي المتناسق</span>
+                <a id="muscle-science-link" href="https://my.clevelandclinic.org/health/body/gluteal-muscles-glutes" target="_blank" rel="noopener noreferrer" class="ltr text-xs font-bold text-softrose underline hover:text-white">
+                  Anatomical Reference ↗
+                </a>
+              </div>
+              <h3 id="muscle-detail-name" class="text-2xl font-black text-white">عضلات المؤخرة والأرداف (Gluteus Maximus & Medius)</h3>
+              <p id="muscle-detail-desc" class="text-sm text-slate-300 leading-relaxed"></p>
+            </div>
+
+            <!-- Exercises Container (Gym or Home) -->
+            <div id="muscle-exercises-list" class="space-y-4">
+              <!-- Populated dynamically via JS -->
+            </div>
+          </div>
+
+          <!-- Set Progress Footer -->
+          <div class="glass-card-subtle rounded-2xl p-4 flex flex-wrap items-center justify-between gap-3 border border-white/10">
+            <div class="text-xs text-slate-300">
+              💡 <strong class="text-white">نصيحة البيوميكانيك لإبتسام:</strong> ف كل تمرين، تحكمي ف النزول (<span class="ltr font-bold text-softrose">2–3 seconds eccentric</span>) وعصري العضلة الفوق باش تبني عضل صافي بلا ما تحتاجي أوزان خطيرة.
+            </div>
+            <button type="button" onclick="resetMuscleSets()" class="px-3.5 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-slate-300 whitespace-nowrap shrink-0">
+              تصفير جولات هاد العضلة
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- TAB 3: الماكلة الاقتصادية لطالبة (Ultra-Budget 95g–100g Protein & Low-Carb Nutrition) -->
+    <!-- ==================================================================== -->
+    <section id="tab-panel-3" class="hidden space-y-6">
+
+      <!-- 1. Live Daily Macro & Dirham Cost Calculator Banner -->
+      <div class="glass-card rounded-3xl p-6 border border-mint/30 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <span class="text-xs font-extrabold text-mint">حاسبة الماكروز والميزانية الحية · تتحين أوتوماتيكياً فاش تبدلي أي وجبة</span>
+            <h3 class="text-xl lg:text-2xl font-black text-white mt-0.5">مجموع نهارك الغذائي المختار دابا (إبتسام · 76→60 kg)</h3>
+          </div>
+          <div class="text-xs font-bold text-slate-300">
+            مرجع علمي: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11405322/" target="_blank" rel="noopener noreferrer" class="underline text-softrose ltr">PMC11405322</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/35019903/" target="_blank" rel="noopener noreferrer" class="underline text-holocyan ltr">PMID 35019903</a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="glass-card-subtle rounded-2xl p-4 border border-mint/30">
+            <div class="text-xs font-bold text-slate-300">البروتين اليومي (الهدف: 95g–100g)</div>
+            <div class="flex items-baseline gap-1.5 mt-1">
+              <span id="live-macro-protein" class="ltr text-3xl font-black text-mint">96g</span>
+              <span class="text-xs font-bold text-slate-400">/ 100g MAX</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-1">100% اقتصادي بلا Whey Protein</div>
+          </div>
+
+          <div class="glass-card-subtle rounded-2xl p-4 border border-holocyan/30">
+            <div class="text-xs font-bold text-slate-300">الكاربز النقية (الهدف: 70g–80g)</div>
+            <div class="flex items-baseline gap-1.5 mt-1">
+              <span id="live-macro-carbs" class="ltr text-3xl font-black text-holocyan">72g</span>
+              <span class="text-xs font-bold text-slate-400">Low & Clean</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-1">0% كاربز و0% خبز بالليل</div>
+          </div>
+
+          <div class="glass-card-subtle rounded-2xl p-4 border border-softrose/30">
+            <div class="text-xs font-bold text-slate-300">السعرات الحرارية + الدهون الصحية</div>
+            <div class="flex items-baseline gap-1.5 mt-1">
+              <span id="live-macro-calories" class="ltr text-3xl font-black text-softrose">1,380</span>
+              <span class="ltr text-xs font-bold text-slate-400">kcal</span>
+            </div>
+            <div id="live-macro-fats" class="text-[11px] text-slate-400 mt-1">الدهون الصحية: 47g (زيت العود، أصفر البيض، سردين)</div>
+          </div>
+
+          <div class="glass-card-subtle rounded-2xl p-4 border border-fiercerose/40">
+            <div class="text-xs font-bold text-slate-300">التكلفة اليومية الإجمالية</div>
+            <div class="flex items-baseline gap-1.5 mt-1">
+              <span id="live-macro-cost" class="ltr text-3xl font-black text-white">14.0</span>
+              <span class="text-xs font-bold text-softrose">درهم ف النهار</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-1">ميزانية طالبة مغربية (12–17 DH)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Interactive 4-Meal Swapper (12 Complete Options) -->
+      <div class="space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="text-xl font-black text-white">🔄 بدّل الاختيار ف كل وجبة على حساب الموجود ف الدار (4 وجبات × 3 اختيارات)</h3>
+          <span class="text-xs font-bold text-softrose">كليكي على أي خيار باش يتحسب ف المجموع الفوق</span>
+        </div>
+
+        <div id="meals-swapper-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Populated dynamically via JS for all 4 meals & 12 options -->
+        </div>
+      </div>
+
+      <!-- 3. Family Tajine Survival Box & 4. Interactive Weekly Student Grocery Checklist -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+
+        <!-- Family Tajine Survival Box -->
+        <div class="lg:col-span-6 glass-card-rose rounded-3xl p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <span class="text-xs font-extrabold text-softrose">دليل الذكاء العائلي · 0 درهم مصروف إضافي</span>
+            <h3 class="text-xl font-black text-white">🍲 كيفاش تاكلي من طاجين الدار بلا ما تخسري درهم؟</h3>
+            <p class="text-sm text-slate-200 leading-relaxed">
+              ماشي ضروري طيبي بوحدك كل نهار! نهار يكون طاجين الدار أو المرقة، طبقي هاد 4 ديال القواعد الذكية وغادي تاخدي البروتين ديالك فابور بلا ما تخرجي على الريجيم:
+            </p>
+
+            <div class="space-y-2.5 pt-1">
+              <div class="glass-card-subtle rounded-2xl p-3.5">
+                <strong class="text-softrose text-sm block">1. كولي بالفرشيطة والمعلقة (حيدي الخبز نهائياً):</strong>
+                <p class="text-xs text-slate-300 mt-1">الخبز هو اللي كيخليك تغمسي المرقة الميدمة وتوصلي لـ 900 سعرة بلا ما تحسي. حطي حقك ف طبسيل صغير وكوليه بالفرشيطة.</p>
+              </div>
+              <div class="glass-card-subtle rounded-2xl p-3.5">
+                <strong class="text-holocyan text-sm block">2. خذي طرفك ديال الدجاج/اللحم/الحوت + الخضرة طايبة:</strong>
+                <p class="text-xs text-slate-300 mt-1">عمري طبسيلك بالقرعة الخضراء، خيزو، اللوبيا الخضراء، البصلة، وطريف صغير ديال البطاطا ف الغداء فقط (بلا بطاطا بالليل).</p>
+              </div>
+              <div class="glass-card-subtle rounded-2xl p-3.5">
+                <strong class="text-mint text-sm block">3. قطري الماكلة من ليدام (المرقة الميدمة):</strong>
+                <p class="text-xs text-slate-300 mt-1">معلقة وحدة كبيرة ديال الزيت ف الطاجين فيها 120 سعرة حرارية. هزي الخضرة واللحم من الفوق بلا ما تهزي الزيت التحتاني.</p>
+              </div>
+              <div class="glass-card-subtle rounded-2xl p-3.5">
+                <strong class="text-white text-sm block">4. شربي 2 كيسان كبار ديال الماء + زلافة شلاظة قبل الطاجين:</strong>
+                <p class="text-xs text-slate-300 mt-1">بداي بالماء والخيار/الخص وعاد كولي حقك ديال البروتين من الطاجين + زيدي بيضة مسلوقة إلا كان طرف اللحم صغير.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Weekly Student Grocery Checklist -->
+        <div class="lg:col-span-6 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-extrabold text-holocyan">قائمة التقدية الاقتصادية ديال إبتسام</span>
+                <h3 class="text-xl font-black text-white mt-0.5">🛒 تقدية السيمانة بـ ~90–100 درهم فقط</h3>
+              </div>
+              <span id="grocery-checked-count" class="ltr text-xs font-black text-mint">0 / 7</span>
+            </div>
+            <p class="text-xs text-slate-300">
+              كوشي الحوايج اللي شريتي أو اللي واجدين عندكم ف الدار هاد السيمانة:
+            </p>
+
+            <div id="grocery-checklist-container" class="space-y-2.5 pt-1">
+              <!-- Populated dynamically via JS -->
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-3 border-t border-white/10 text-xs text-slate-400">
+            <span>المجموع التقريبي للسيمانة كاملة: <strong class="text-white ltr">~92 – 102 DH</strong></span>
+            <button type="button" onclick="resetGroceryList()" class="text-softrose hover:underline font-bold">إعادة تعيين القائمة</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- TAB 4: جدول السيمانة الكامل (7 أيام)، توقيت الكارديو & التايمر الذكي -->
+    <!-- ==================================================================== -->
+    <section id="tab-panel-4" class="hidden space-y-6">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+
+        <!-- 7-Day Split Selector & Daily Workout Checklist -->
+        <div class="lg:col-span-8 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-extrabold text-softrose">البرنامج الأسبوعي الكامل (7 أيام بلا اختصار)</span>
+                <h3 class="text-xl font-black text-white mt-0.5">اختاري النهار وكوشي التمارين ديالك واحد بواحد</h3>
+              </div>
+              <span id="day-completed-badge" class="ltr text-xs font-black text-mint">0 / 6 تمارين</span>
+            </div>
+
+            <!-- 7 Day Selector Buttons -->
+            <div id="week-days-tabs" class="grid grid-cols-4 sm:grid-cols-7 gap-2">
+              <!-- Populated via JS for الإثنين through الأحد -->
+            </div>
+
+            <!-- Selected Day Header Card -->
+            <div id="selected-day-header" class="glass-card-rose rounded-2xl p-4 space-y-1">
+              <!-- Populated via JS -->
+            </div>
+
+            <!-- Selected Day Exercises Checklist -->
+            <div id="selected-day-exercises" class="space-y-2.5">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+
+          <!-- Cardio Timing Science Note -->
+          <div class="glass-card-cyan rounded-2xl p-4 text-xs text-slate-200 leading-relaxed">
+            ⚡ <strong class="text-holocyan">قاعدة توقيت الكارديو لإبتسام:</strong> ديما ديري الـ 20–25 دقيقة ديال الكارديو (مشي سريع أو عقبة خفيفة) <strong class="text-white">مباشرة من بعد حصة الأوزان</strong>! علاش؟ حيت ف حصة المقاومة الجسم كيحرق مخزون السكر (Glycogen)، وملي كتبداي المشي السريع من موراها كيدخل الجسم نيشان ف حرق الشحمة المخزنة.
+          </div>
+        </div>
+
+        <!-- Built-in Smart Workout & Rest Timer -->
+        <div class="lg:col-span-4 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div>
+              <span class="text-xs font-extrabold text-holocyan">التايمر الذكي للراحة والـ Vacuum</span>
+              <h3 class="text-xl font-black text-white mt-0.5">⏱️ مؤقت التمرين والراحة</h3>
+            </div>
+
+            <!-- Digital Countdown Display -->
+            <div class="glass-card-subtle rounded-3xl p-6 text-center border border-holocyan/30 relative overflow-hidden">
+              <div id="timer-mode-label" class="text-xs font-bold text-softrose mb-1">60 ثانية راحة عادية</div>
+              <div id="timer-digits" class="ltr text-5xl sm:text-6xl font-black text-white tracking-wider my-2">01:00</div>
+              <div class="w-full h-2 rounded-full bg-white/10 overflow-hidden mt-3">
+                <div id="timer-progress-bar" class="h-full bg-gradient-to-r from-holocyan to-fiercerose transition-all duration-300" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <!-- Preset Buttons -->
+            <div class="space-y-2">
+              <span class="text-xs font-bold text-slate-400 block">اختاري توقيت جاهز:</span>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" onclick="setTimerPreset(60, '60s راحة عادية')" class="min-h-[42px] px-3 py-2 rounded-xl glass-card-subtle hover:border-holocyan/50 text-xs font-extrabold text-slate-200 transition-all">
+                  <span class="ltr text-holocyan">60s</span> راحة عادية
+                </button>
+                <button type="button" onclick="setTimerPreset(90, '90s راحة Squat/Hip Thrust')" class="min-h-[42px] px-3 py-2 rounded-xl glass-card-subtle hover:border-fiercerose/50 text-xs font-extrabold text-slate-200 transition-all">
+                  <span class="ltr text-softrose">90s</span> Squat / Hip Thrust
+                </button>
+                <button type="button" onclick="setTimerPreset(45, '45s Plank')" class="min-h-[42px] px-3 py-2 rounded-xl glass-card-subtle hover:border-mint/50 text-xs font-extrabold text-slate-200 transition-all">
+                  <span class="ltr text-mint">45s</span> Plank
+                </button>
+                <button type="button" onclick="setTimerPreset(30, '30s Stomach Vacuum')" class="min-h-[42px] px-3 py-2 rounded-xl glass-card-subtle hover:border-softrose/50 text-xs font-extrabold text-slate-200 transition-all">
+                  <span class="ltr text-softrose">30s</span> Stomach Vacuum
+                </button>
+              </div>
+            </div>
+
+            <!-- +15s / -15s Adjusters -->
+            <div class="flex items-center gap-2">
+              <button type="button" onclick="adjustTimerSeconds(15)" class="flex-1 min-h-[40px] py-2 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-white ltr">
+                +15s
+              </button>
+              <button type="button" onclick="adjustTimerSeconds(-15)" class="flex-1 min-h-[40px] py-2 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-white ltr">
+                -15s
+              </button>
+            </div>
+          </div>
+
+          <!-- Start / Pause / Reset Controls -->
+          <div class="grid grid-cols-2 gap-3 pt-3 border-t border-white/10">
+            <button type="button" id="timer-start-btn" onclick="toggleTimerStartPause()" class="min-h-[48px] py-3 px-4 rounded-2xl bg-fiercerose hover:bg-fiercerose/90 text-white font-black text-sm shadow-lg shadow-fiercerose/25 transition-all">
+              تشغيل التايمر ▶
+            </button>
+            <button type="button" onclick="resetTimer()" class="min-h-[48px] py-3 px-4 rounded-2xl glass-card-subtle hover:border-white/30 text-slate-200 font-extrabold text-sm transition-all">
+              إعادة ضبط ↺
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- TAB 5: مختبر القياسات بالسنتيم & محاكي الوصول لـ 60 kg -->
+    <!-- ==================================================================== -->
+    <section id="tab-panel-5" class="hidden space-y-6">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+
+        <!-- 1. Body Recomposition Centimeter Tracker -->
+        <div class="lg:col-span-6 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div>
+              <span class="text-xs font-extrabold text-softrose">مختبر القياسات بالسنتيم (Body Recomposition Lab)</span>
+              <h3 class="text-xl font-black text-white mt-0.5">📏 علاش السنتيم أهم من الميزان؟</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mt-1">
+                العضل مجموع ومشدود وكياخد مساحة أقل بـ 30% من الشحمة! بمعنى يقدر الميزان يهبط غير بـ 1 كغ، ولكن محيط الخصر ديالك ينقص بـ <span class="ltr font-bold text-mint">3 cm</span> والمؤخرة تشد وتترفع. عبري بالسنتيم كل أسبوعين:
+              </p>
+            </div>
+
+            <!-- 4 Measurement Inputs in cm -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div class="glass-card-subtle rounded-2xl p-3.5 space-y-1.5">
+                <label for="cm-waist-input" class="text-xs font-bold text-slate-300 block">محيط الخصر (Waist cm)</label>
+                <input id="cm-waist-input" type="number" step="0.5" min="50" max="130" value="82" class="ltr w-full min-h-[42px] rounded-xl bg-obsidian/90 border border-softrose/30 px-3 py-1.5 text-base font-black text-white focus:outline-none focus:border-fiercerose" />
+                <span class="text-[11px] text-slate-400 block">أضيق نقطة فوق السرة</span>
+              </div>
+
+              <div class="glass-card-subtle rounded-2xl p-3.5 space-y-1.5">
+                <label for="cm-hips-input" class="text-xs font-bold text-slate-300 block">محيط الورك والمؤخرة (Hips/Glutes cm)</label>
+                <input id="cm-hips-input" type="number" step="0.5" min="70" max="150" value="106" class="ltr w-full min-h-[42px] rounded-xl bg-obsidian/90 border border-softrose/30 px-3 py-1.5 text-base font-black text-white focus:outline-none focus:border-fiercerose" />
+                <span class="text-[11px] text-slate-400 block">أعرض نقطة ف الأرداف</span>
+              </div>
+
+              <div class="glass-card-subtle rounded-2xl p-3.5 space-y-1.5">
+                <label for="cm-thigh-input" class="text-xs font-bold text-slate-300 block">محيط الفخذ (Thigh cm)</label>
+                <input id="cm-thigh-input" type="number" step="0.5" min="35" max="90" value="61" class="ltr w-full min-h-[42px] rounded-xl bg-obsidian/90 border border-softrose/30 px-3 py-1.5 text-base font-black text-white focus:outline-none focus:border-fiercerose" />
+                <span class="text-[11px] text-slate-400 block">وسط الفخذ واقفة</span>
+              </div>
+
+              <div class="glass-card-subtle rounded-2xl p-3.5 space-y-1.5">
+                <label for="cm-arm-input" class="text-xs font-bold text-slate-300 block">محيط الذراع (Arm cm)</label>
+                <input id="cm-arm-input" type="number" step="0.5" min="20" max="50" value="30" class="ltr w-full min-h-[42px] rounded-xl bg-obsidian/90 border border-softrose/30 px-3 py-1.5 text-base font-black text-white focus:outline-none focus:border-fiercerose" />
+                <span class="text-[11px] text-slate-400 block">وسط الذراع مرخية</span>
+              </div>
+            </div>
+
+            <button type="button" id="save-cm-btn" onclick="saveCmMeasurements()" class="w-full min-h-[46px] py-2.5 px-5 rounded-2xl bg-fiercerose hover:bg-fiercerose/90 text-white font-black text-sm shadow-lg shadow-fiercerose/25 transition-all">
+              حفظ القياسات وحساب تناسق الساعة الرملية (WHR)
+            </button>
+          </div>
+
+          <!-- WHR Ratio Result Card -->
+          <div class="glass-card-rose rounded-2xl p-4 space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-bold text-slate-200">نسبة الخصر للورك (Waist-to-Hip Ratio):</span>
+              <span id="whr-ratio-value" class="ltr text-2xl font-black text-mint">0.77</span>
+            </div>
+            <p id="whr-status-text" class="text-xs font-extrabold text-softrose">
+              تناسق الساعة الرملية ممتاز (Athletic Hourglass)
+            </p>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              فاش كتبني اللاتس (جناب الظهر) وكتقوي عضلات المؤخرة (Glutes) مع تمارين الـ Stomach Vacuum للخصر، كتحصلي على فورمة <strong class="text-white">Hourglass</strong> رياضية ومشدودة حتى قبل ما توصلي لـ 60 كغ على الميزان.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Interactive 76 kg -> 60 kg Timeline Projector -->
+        <div class="lg:col-span-6 glass-card rounded-3xl p-6 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-extrabold text-holocyan">محاكي الوصول للهدف المبني على العجز الحراري</span>
+                <h3 class="text-xl font-black text-white mt-0.5">🎯 محاكي خطة <span class="ltr">76.0 kg → 60.0 kg</span></h3>
+              </div>
+              <a href="https://www.nhsinform.scot/healthy-living/weight-loss/tips-for-losing-weight-safely/" target="_blank" rel="noopener noreferrer" class="ltr text-xs font-bold text-holocyan underline">
+                NHS Safe Deficit ↗
+              </a>
+            </div>
+
+            <!-- Slider for Weekly Rate (0.5 to 0.9 kg/week) -->
+            <div class="glass-card-subtle rounded-2xl p-4 space-y-3 border border-holocyan/25">
+              <div class="flex items-center justify-between">
+                <label for="rate-slider" class="text-xs font-bold text-slate-200">وتيرة نزول الدهون ف السيمانة:</label>
+                <span id="rate-slider-display" class="ltr text-lg font-black text-holocyan">0.7 kg / week</span>
+              </div>
+              <input
+                id="rate-slider"
+                type="range"
+                min="0.5"
+                max="0.9"
+                step="0.05"
+                value="0.7"
+                oninput="updateTimelineProjection()"
+                class="w-full ltr"
+              />
+              <div class="flex justify-between text-[11px] font-bold text-slate-400 ltr">
+                <span>0.5 kg/wk (هادئ ومريح)</span>
+                <span>0.7 kg/wk (مثالي)</span>
+                <span>0.9 kg/wk (مكثف)</span>
+              </div>
+            </div>
+
+            <!-- Total Weeks Banner -->
+            <div class="glass-card-cyan rounded-2xl p-4 flex items-center justify-between">
+              <div>
+                <span class="text-xs font-bold text-slate-300 block">المدة المتوقعة للوصول لـ 60.0 كغ صافية:</span>
+                <span id="proj-subtitle" class="text-xs text-holocyan font-bold">بناءً على وزنك الحالي المسجل</span>
+              </div>
+              <div class="text-left">
+                <span id="proj-total-weeks" class="ltr text-3xl font-black text-white">23</span>
+                <span class="text-xs font-bold text-softrose block">سيمانة ديال الالتزام</span>
+              </div>
+            </div>
+
+            <!-- 4 Milestone Cards (Week 4, Week 8, Week 14, Final 60.0 kg Goal) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="glass-card-subtle rounded-2xl p-3.5 border border-white/10">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-extrabold text-softrose">المرحلة 1 · السيمانة 4</span>
+                  <span id="milestone-w4" class="ltr text-lg font-black text-white">73.2 kg</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1">النفخة واحتباس السوائل كيمشيو، والبطن كتبدا تدخل بفضل الـ Vacuum والماء.</p>
+              </div>
+
+              <div class="glass-card-subtle rounded-2xl p-3.5 border border-white/10">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-extrabold text-holocyan">المرحلة 2 · السيمانة 8</span>
+                  <span id="milestone-w8" class="ltr text-lg font-black text-white">70.4 kg</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1">الحوايج كيوساعو بوضوح من الخصر، والقوة ف السكوات والـ Hip Thrust كتزاد.</p>
+              </div>
+
+              <div class="glass-card-subtle rounded-2xl p-3.5 border border-white/10">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-extrabold text-mint">المرحلة 3 · السيمانة 14</span>
+                  <span id="milestone-w14" class="ltr text-lg font-black text-white">66.2 kg</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1">رسمة الظهر والخصر كتبان مزيان، ونزول كبير ف دهون الذراعين والفخذين.</p>
+              </div>
+
+              <div class="glass-card-rose rounded-2xl p-3.5 border border-fiercerose/40">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-extrabold text-white">الهدف النهائي · Goal</span>
+                  <span id="milestone-goal" class="ltr text-lg font-black text-mint">60.0 kg</span>
+                </div>
+                <p class="text-xs text-slate-200 mt-1">وصول كامل لـ <span class="ltr font-bold">60.0 kg (BMI 22.3)</span> بجسم مشدود، صحي، وأنثوي متناسق.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Minimal Clean Footer -->
+  <footer class="border-t border-white/10 py-5 px-4 lg:px-8 mt-8 text-center text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span>مصمم بكل فخر وعلم خصيصاً لـ <strong class="text-softrose">إبتسام (Ibtissam)</strong> — رحلة 76 كغ إلى 60 كغ</span>
+      <span class="ltr text-slate-500">IBTISSAM // 76→60 RECOMP STUDIO · MOROCCAN STUDENT EDITION</span>
+    </div>
+  </footer>
+
+  <!-- Inline Application Logic (100% Self-Contained Vanilla JS) -->
+  <script>
+    // ============================================================================
+    // 1. SAFE STORAGE & WEB AUDIO SYNTHESIZER
+    // ============================================================================
+    const STORAGE_KEY = 'ibtissam_recomp_studio_v1';
+    let audioMuted = false;
+    let audioCtx = null;
+
+    function loadAppState() {
+      const defaultState = {
+        currentWeight: 76.0,
+        waterCups: 0,
+        habits: [false, false, false, false, false, false],
+        streakCount: 3,
+        selectedMuscle: 'glutes',
+        hologramView: 'back',
+        workoutPlaceMode: 'gym',
+        completedSets: {},
+        selectedMealOptions: { breakfast: 0, lunch: 0, snack: 0, dinner: 0 },
+        groceryChecked: [true, true, false, false, false, false, false],
+        selectedDayIndex: 0,
+        dayExercisesChecked: {},
+        measurements: { waist: 82, hips: 106, thigh: 61, arm: 30 },
+        weeklyRate: 0.7,
+        audioMuted: false
+      };
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return defaultState;
+        const parsed = JSON.parse(raw);
+        return Object.assign({}, defaultState, parsed);
+      } catch (e) {
+        return defaultState;
+      }
+    }
+
+    function saveAppState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      } catch (e) {
+        // Safe ignore if storage quota or private mode blocks writes
+      }
+    }
+
+    const appState = loadAppState();
+    audioMuted = Boolean(appState.audioMuted);
+
+    function playSound(type) {
+      if (audioMuted) return;
+      try {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) return;
+        if (!audioCtx) audioCtx = new AudioContextClass();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+
+        const now = audioCtx.currentTime;
+        if (type === 'click') {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(520, now);
+          osc.frequency.exponentialRampToValueAtTime(680, now + 0.06);
+          gain.gain.setValueAtTime(0.06, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.07);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now);
+          osc.stop(now + 0.07);
+        } else if (type === 'water') {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(440, now);
+          osc.frequency.exponentialRampToValueAtTime(760, now + 0.11);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now);
+          osc.stop(now + 0.12);
+        } else if (type === 'victory') {
+          const notes = [523.25, 659.25, 783.99, 1046.5];
+          notes.forEach((freq, idx) => {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, now + idx * 0.09);
+            gain.gain.setValueAtTime(0.1, now + idx * 0.09);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.09 + 0.25);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now + idx * 0.09);
+            osc.stop(now + idx * 0.09 + 0.26);
+          });
+        }
+      } catch (e) {
+        // Ignore audio errors
+      }
+    }
+
+    function toggleAudioMute() {
+      audioMuted = !audioMuted;
+      appState.audioMuted = audioMuted;
+      saveAppState();
+      updateAudioToggleUI();
+      if (!audioMuted) playSound('click');
+      showToast(audioMuted ? 'تم كتم المؤثرات الصوتية 🔇' : 'تم تفعيل المؤثرات الصوتية 🔊', '🔊');
+    }
+
+    function updateAudioToggleUI() {
+      const iconEl = document.getElementById('audio-toggle-icon');
+      const labelEl = document.getElementById('audio-toggle-label');
+      if (iconEl) iconEl.textContent = audioMuted ? '🔇' : '🔊';
+      if (labelEl) labelEl.textContent = audioMuted ? 'الصوت مكتوم' : 'الصوت مفعل';
+    }
+
+    let toastTimeout = null;
+    function showToast(message, icon = '✨') {
+      const container = document.getElementById('toast-container');
+      const msgEl = document.getElementById('toast-message');
+      const iconEl = document.getElementById('toast-icon');
+      if (!container || !msgEl || !iconEl) return;
+      msgEl.textContent = message;
+      iconEl.textContent = icon;
+      container.classList.remove('opacity-0', 'translate-y-4');
+      container.classList.add('opacity-100', 'translate-y-0');
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        container.classList.remove('opacity-100', 'translate-y-0');
+        container.classList.add('opacity-0', 'translate-y-4');
+      }, 3400);
+    }
+
+    // ============================================================================
+    // 2. COMPLETE DATASETS (11 MUSCLES, 4 MEALS x 3 OPTIONS, 7 DAYS OF WEEK)
+    // ============================================================================
+
+    const DAILY_HABITS_DATA = [
+      { id: 0, title: 'شرب 3.5 لتر ديال الماء كاملة (14 كاس)', sub: 'تصفية السوائل وسد الشهية طبيعياً' },
+      { id: 1, title: 'إكمال حصة المقاومة ديال النهار (في الدار أو لاصال) بتركيز عالي', sub: 'حماية وبناء العضل الصافي' },
+      { id: 2, title: 'الوصول لـ 95g–100g بروتين اقتصادي (بيض، سردين، عدس، لاداند)', sub: 'شبع طويل وبناء عضلي' },
+      { id: 3, title: 'كاربز هابطة ونظيفة (<80g) + 0 خبز و0 سكر بالليل', sub: 'القضاء على النفخة وتسريع حرق الشحمة' },
+      { id: 4, title: 'إكمال 25 دقيقة كارديو (مشي سريع/عقبة) + 8,500 خطوة', sub: 'حرق الدهون بعد حصة المقاومة' },
+      { id: 5, title: 'تمرين شفط البطن (Stomach Vacuum 3 دقائق) + نعاس 7-8 ساعات', sub: 'نحت الخصر وتنظيم هرمون الكورتيزول' }
+    ];
+
+    const MUSCLES_DATA = {
+      traps: {
+        id: 'traps',
+        shortName: '1. الترابيز وأعلى الظهر',
+        fullName: 'عضلة الترابيز وأعلى الظهر (Trapezius & Upper Back)',
+        view: 'back',
+        badge: 'تصحيح الوقفة وشد الكتاف اللور',
+        refUrl: 'https://teachmeanatomy.info/back/muscles/superficial/',
+        desc: 'تقوية أعلى الظهر والترابيز السفلي كتقاد الوقفة ديالك (خصوصاً مع الجلسة الطويلة ف القراية والبيسي) وكتعطي مظهر مشدود وأنيق للعنق والكتاف.',
+        gym: [
+          {
+            name: 'Cable Face Pulls (سحب الحبل للوجه)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'جري الحبل لجهة جبهتك وفرقي يديك اللور مع عصر لوحي الكتف ثانية كاملة.',
+            yt: 'https://www.youtube.com/watch?v=0Po47vvj9g4'
+          },
+          {
+            name: 'Seated Cable Row (سحب الكابل جالسة لأعلى الظهر)',
+            setsReps: '3 جولات × 12 تكرار',
+            tip: 'خلي صدرك مهزوز وكتافك بعاد على ودنيك، وجري بيكودك اللور.',
+            yt: 'https://www.youtube.com/watch?v=4UhV4cCkugM'
+          }
+        ],
+        home: [
+          {
+            name: 'Towel Face Pulls / Prone Y-T-W Raises (بفوطة أو على الأرض)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'شدي فوطة بيديك بجوج وجبديها للجناب وأنتِ كتسحبيها لجهة وجهك باش تفيقي عضلات أعلى الظهر ف الدار.',
+            yt: 'https://www.youtube.com/watch?v=0Po47vvj9g4'
+          },
+          {
+            name: 'Backpack Bent-Over Upper Row (سحب شكارة عامرة بالكتوبة)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'عمري شكارة القراية بالكتوبة أو قراعي الماء، حني ظهرك مستقيم وسحبيها لجهة صدرك.',
+            yt: 'https://www.youtube.com/watch?v=WkFX6_GxAs8'
+          }
+        ]
+      },
+      rhomboids: {
+        id: 'rhomboids',
+        shortName: '2. وسط الظهر (Rhomboids)',
+        fullName: 'العضلات المعينية وسط الظهر (Rhomboids)',
+        view: 'back',
+        badge: 'شد الترهلات ديال الظهر وحمالة الصدر',
+        refUrl: 'https://my.clevelandclinic.org/health/body/21632-back-muscles',
+        desc: 'العضلات المعينية كتجمع لوحي الكتف لبعضياتهم، وهي اللي كتحيد دهون وثنيات وسط الظهر وكتخلي الظهر مسرح ومشدود.',
+        gym: [
+          {
+            name: 'Dumbbell Row (تجديف بالدامبلز لوسط الظهر)',
+            setsReps: '4 جولات × 12 تكرار',
+            tip: 'طلعي المرفق ديالك الفوق وعصري وسط ظهرك بحال إلى باغية تشدي ستيلو بين كتافك.',
+            yt: 'https://www.youtube.com/watch?v=WkFX6_GxAs8'
+          },
+          {
+            name: 'Seated Cable Row (التجديف بالكابل)',
+            setsReps: '3 جولات × 12 تكرار',
+            tip: 'تحكمي ف الرجوع بشوية (3 ثواني) وما تخليش الوزن يجرك لقدام.',
+            yt: 'https://www.youtube.com/watch?v=4UhV4cCkugM'
+          }
+        ],
+        home: [
+          {
+            name: 'Single-Arm Water Bottle / Backpack Row (تجديف بيد وحدة بقرعة 5L)',
+            setsReps: '4 جولات × 15 تكرار لكل يد',
+            tip: 'تكاي بيدك على كرسي أو ناموسية، وجري قرعة ديال 5 لتر أو شكارة الكتوبة لوسط ظهرك.',
+            yt: 'https://www.youtube.com/watch?v=dFzUjzfih7k'
+          },
+          {
+            name: 'Reverse Snow Angels (رفرفة الظهر على الأرض)',
+            setsReps: '3 جولات × 15 تكرار',
+            tip: 'تكاي على كرشك وهزي يديك وصدك شوية من الأرض وحركيهم ببطء مع عصر وسط الظهر.',
+            yt: 'https://www.youtube.com/watch?v=4UhV4cCkugM'
+          }
+        ]
+      },
+      lats: {
+        id: 'lats',
+        shortName: '3. اللاتس وجناب الظهر',
+        fullName: 'عضلات اللاتس وجناب الظهر لرسمة الخصر (Latissimus Dorsi)',
+        view: 'back',
+        badge: 'سر الخصر الصغير وفورمة الساعة الرملية',
+        refUrl: 'https://www.physio-pedia.com/Latissimus_Dorsi_Muscle',
+        desc: 'عضلات اللاتس هي اللي كتعطي رسمة V خفيفة من الفوق، وملي كتشد كتخلي الخصر ديالك يبان أصغر وأدق بصرياً (Hourglass Illusion).',
+        gym: [
+          {
+            name: 'Wide-Grip Lat Pulldown (السحب العلوي الواسع)',
+            setsReps: '4 جولات × 12 تكرار',
+            tip: 'جري البار لجهة أعلى صدرك بمرفقيك للتحت، وماشي بيديك، وتجنبي تميلي بزاف اللور.',
+            yt: 'https://www.youtube.com/watch?v=SALxEARiMkw'
+          },
+          {
+            name: 'Single-Arm Dumbbell Row (سحب دامبل بيد وحدة للورك)',
+            setsReps: '3 جولات × 12 تكرار لكل جهة',
+            tip: 'سحبي الدامبل على شكل قوس لجهة جيبك باش تركزي 100% على اللاتس.',
+            yt: 'https://www.youtube.com/watch?v=dFzUjzfih7k'
+          }
+        ],
+        home: [
+          {
+            name: 'Sliding Floor Lat Pulldown (سحب اللاتس بالفوطة على الزليج)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'حطي فوطة تحت يديك على الزليج وأنتِ ناعسة على كرشك، وجري جسمك بجناب ظهرك.',
+            yt: 'https://www.youtube.com/watch?v=SALxEARiMkw'
+          },
+          {
+            name: 'Single-Arm Backpack Lat Row (سحب شكارة تقيلة لجهة الخصر)',
+            setsReps: '4 جولات × 15 تكرار لكل يد',
+            tip: 'سحبي الشكارة لجهة الورك ديالك وحبسي ثانية الفوق باش تحسي بجناب ظهرك كيخدموا.',
+            yt: 'https://www.youtube.com/watch?v=dFzUjzfih7k'
+          }
+        ]
+      },
+      lowerback: {
+        id: 'lowerback',
+        shortName: '4. أسفل الظهر',
+        fullName: 'أسفل الظهر وناصبات العمود الفقري (Erector Spinae)',
+        view: 'back',
+        desc: 'تقوية أسفل الظهر كتحميك من ألم الجلسة الطويلة ف الكلية وكتبرز القوس الأنثوي الفوقاني ديال المؤخرة.',
+        badge: 'حماية العمود الفقري وإبراز قوس الخصر',
+        refUrl: 'https://my.clevelandclinic.org/health/body/21632-back-muscles',
+        gym: [
+          {
+            name: '45° Back Extension (تمديد الظهر على الجهاز)',
+            setsReps: '3 جولات × 15 تكرار',
+            tip: 'طلعي حتى يولي جسمك ف خط مستقيم، وما تقوسيش ظهرك الفوق بزاف باش تحمي الفقرات.',
+            yt: 'https://www.youtube.com/watch?v=H8Swl1N-uis'
+          },
+          {
+            name: 'Glute-Focused Hyperextension (تمديد الظهر بتركيز المؤخرة)',
+            setsReps: '3 جولات × 15 تكرار',
+            tip: 'دوري أعلى ظهرك شوية ودخلي دقنك لصدرك وطلعي بقوة المؤخرة وأسفل الظهر.',
+            yt: 'https://www.youtube.com/watch?v=S1_eZIIZlIc'
+          }
+        ],
+        home: [
+          {
+            name: 'Floor Superman Hold & Raises (تمرين سوبرمان على الزربية)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'تكاي على كرشك، هزي صدرك ورجليك شوية من الأرض وحبسي 2 ثواني ف كل تكرار.',
+            yt: 'https://www.youtube.com/watch?v=H8Swl1N-uis'
+          },
+          {
+            name: 'Sofa / Bed Hip-Back Extension (تمديد على حافة الناموسية)',
+            setsReps: '3 جولات × 15 تكرار',
+            tip: 'ثبتي حوضك على طرف السداري أو الناموسية وطلعي بتحكم كامل.',
+            yt: 'https://www.youtube.com/watch?v=S1_eZIIZlIc'
+          }
+        ]
+      },
+      glutes: {
+        id: 'glutes',
+        shortName: '5. المؤخرة والأرداف (Glutes)',
+        fullName: 'عضلات المؤخرة والأرداف (Gluteus Maximus & Medius)',
+        view: 'back',
+        badge: 'العضلة رقم 1 لرفع ونحت القوام الأنثوي',
+        refUrl: 'https://my.clevelandclinic.org/health/body/gluteal-muscles-glutes',
+        desc: 'أكبر وأقوى عضلة ف الجسم! ملي كتخدميها بالأوزان، كترفع وكتشد وكتستهلك سعرات حرارية عالية حتى وأنتِ جالسة كتقراي.',
+        gym: [
+          {
+            name: 'Barbell / Dumbbell Hip Thrust (الرفع الوركي للـ Glutes)',
+            setsReps: '4 جولات × 12 تكرار',
+            tip: 'خلي دقنك لاصق ف صدرك، دفعي بكعب رجليك، وحبسي الفوق 2 ثواني مع عصر المؤخرة.',
+            yt: 'https://www.youtube.com/watch?v=pF17m_CXfL0'
+          },
+          {
+            name: 'Glute-Focused Bulgarian Split Squat (سكوات بلغاري للمؤخرة)',
+            setsReps: '3 جولات × 10 تكرارات لكل رجل',
+            tip: 'ميلي بجذعك شوية لقدام وهبطي عميق باش يمشي الضغط كامل للمؤخرة.',
+            yt: 'https://www.youtube.com/watch?v=VPhhE6bBzZE'
+          }
+        ],
+        home: [
+          {
+            name: 'Single-Leg Hip Thrust on Sofa (رفع وركي برجل وحدة على السداري)',
+            setsReps: '4 جولات × 12 تكرار لكل رجل',
+            tip: 'حطي كتافك على حافة السداري وخدمي برجل وحدة — كيعطي نفس شدة أوزان لاصال!',
+            yt: 'https://www.youtube.com/watch?v=L4nTaesNm0E'
+          },
+          {
+            name: 'Weighted Floor Glute Bridge (جسر المؤخرة بـشكارة الكتوبة)',
+            setsReps: '4 جولات × 20 تكرار',
+            tip: 'حطي شكارة عامرة بالكتوبة فوق حوضك وطلعي مع حبس 3 ثواني الفوق.',
+            yt: 'https://www.youtube.com/watch?v=2-47T-U82KU'
+          }
+        ]
+      },
+      quads: {
+        id: 'quads',
+        shortName: '6. الفخذ الأمامي والداخلي',
+        fullName: 'الفخذ الأمامي والداخلي (Quadriceps & Adductors)',
+        view: 'front',
+        badge: 'شد الرجلين وحرق عالي للسعرات',
+        refUrl: 'https://my.clevelandclinic.org/health/body/22220-leg-muscles',
+        desc: 'تمارين الفخذ الأمامي والداخلي كتشد ترهلات الرجلين من الفوق وكتحول جسمك لماكينة ديال حرق الدهون.',
+        gym: [
+          {
+            name: 'Goblet Squat (سكوات الكأس بالدامبل)',
+            setsReps: '4 جولات × 12 تكرار',
+            tip: 'شدي دامبل حدا صدرك، فتحي ركابيك لجهة صباع رجليك وهبطي بظهر مستقيم.',
+            yt: 'https://www.youtube.com/watch?v=6mf0oa2GGUc'
+          },
+          {
+            name: 'Bulgarian Split Squat (السكوات البلغاري)',
+            setsReps: '3 جولات × 10 تكرارات لكل رجل',
+            tip: 'ركزي على الرجل القدامية ودفعها للأرض بلا ما تميل ركبتك لداخل.',
+            yt: 'https://www.youtube.com/watch?v=VPhhE6bBzZE'
+          }
+        ],
+        home: [
+          {
+            name: 'Water Bottle Goblet Squat (سكوات بقرعة 5 لتر أو شكارة)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'عنقي قرعة ديال 5 لتر حدا صدرك وهبطي ف،3 ثواني وطلعي بقوة.',
+            yt: 'https://www.youtube.com/watch?v=6mf0oa2GGUc'
+          },
+          {
+            name: 'Home Chair Bulgarian Split Squat (سكوات بلغاري على كرسي البيت)',
+            setsReps: '3 جولات × 12 تكرار لكل رجل',
+            tip: 'حطي رجلك اللورانية فوق كرسي القراية أو الناموسية وخدمي بتوازن.',
+            yt: 'https://www.youtube.com/watch?v=VPhhE6bBzZE'
+          }
+        ]
+      },
+      hamstrings: {
+        id: 'hamstrings',
+        shortName: '7. الفخذ الخلفي (Hamstrings)',
+        fullName: 'عضلات الفخذ الخلفي (Hamstrings)',
+        view: 'back',
+        badge: 'شد الفخذ من اللور وفصل المؤخرة على الرجل',
+        refUrl: 'https://my.clevelandclinic.org/health/body/21904-hamstring-muscles',
+        desc: 'خدمة الفخذ الخلفي كتحيد السيلوليت من ورا الرجلين وكتصاوب داك الخط المرسوم بين المؤخرة والفخذ.',
+        gym: [
+          {
+            name: 'Romanian Deadlift - RDL (الرفعة الرومانية بالدامبلز أو البار)',
+            setsReps: '4 جولات × 12 تكرار',
+            tip: 'دفعي مؤخرتك اللور بحال إلى كتسدي باب بمؤخرتك، وخلي الدامبلز لاصقين على رجليك.',
+            yt: 'https://www.youtube.com/watch?v=lEf5D01Uw1o'
+          },
+          {
+            name: 'Glute-Hamstring Hyperextension (تمديد خلفي)',
+            setsReps: '3 جولات × 15 تكرار',
+            tip: 'ركزي على الدفع بعقب رجليك باش تحسي بشد قوي ورا الفخذ.',
+            yt: 'https://www.youtube.com/watch?v=S1_eZIIZlIc'
+          }
+        ],
+        home: [
+          {
+            name: 'Backpack / Single-Leg RDL (الرفعة الرومانية بشكارة الكتوبة)',
+            setsReps: '4 جولات × 12 تكرار لكل رجل',
+            tip: 'خدمي برجل وحدة أو بجوج وأنتِ شادة شكارة تقيلة، وهبطي ببطء حتى تحسي بجبدة ورا الفخذ.',
+            yt: 'https://www.youtube.com/watch?v=lEf5D01Uw1o'
+          },
+          {
+            name: 'Long-Lever Glute Bridge (جسر أرضي برجلي ممدودين شوية)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'بعدي كعب رجليك شوية على المؤخرة وطلعي على الكعب باش تخدمي الفخذ الخلفي فالدار.',
+            yt: 'https://www.youtube.com/watch?v=2-47T-U82KU'
+          }
+        ]
+      },
+      core: {
+        id: 'core',
+        shortName: '8. الحزام البطني والخصر (Core)',
+        fullName: 'الحزام البطني والعضلة المستعرضة للخصر (Transverse Abdominis)',
+        view: 'front',
+        badge: 'حزام طبيعي لجمع الكرش وتصغير محيط الخصر',
+        refUrl: 'https://my.clevelandclinic.org/health/body/21755-abdominal-muscles',
+        desc: 'العضلة المستعرضة هي المشد الطبيعي ديال كرشك. بتمرين الـ Stomach Vacuum الصباح على الريق غادي تصغري محيط خصرك بـ 3 تال 5 سنتيم ف الأسابيع اللولة.',
+        gym: [
+          {
+            name: 'Stomach Vacuum (تمرين شفط البطن الاحترافي)',
+            setsReps: '4 جولات × 25 ثانية',
+            tip: 'خرجي النفس كامل من ريتك، وجبدي سرتك لداخل كأنك كتلصقيها مع ظهرك وحبسي.',
+            yt: 'https://www.youtube.com/watch?v=gTU9-QJam7o'
+          },
+          {
+            name: 'Deadbug Core Stabilization (تمرين الحشرة الميتة لشد البطن السفلي)',
+            setsReps: '3 جولات × 16 تكرار',
+            tip: 'لصقي أسفل ظهرك مع الأرض تماماً وما تخليهش يتهز وأنتِ كتمدي يدك ورجلك.',
+            yt: 'https://www.youtube.com/watch?v=-8xqJ2xXs2A'
+          }
+        ],
+        home: [
+          {
+            name: 'Morning Stomach Vacuum (شفط البطن الصباح على الريق)',
+            setsReps: '4 جولات × 30 ثانية',
+            tip: 'ديريها كل صباح قبل الفطور وأنتِ واقفة أو حاطة يديك على ركابيك.',
+            yt: 'https://www.youtube.com/watch?v=gTU9-QJam7o'
+          },
+          {
+            name: 'Floor Deadbug & Plank (شد الكرش السفلية بلا ألم العنق)',
+            setsReps: '3 جولات × 16 تكرار',
+            tip: 'أحسن بمليون مرة من الـ Crunch العادي ومكيغلضش الخصر نهائياً.',
+            yt: 'https://www.youtube.com/watch?v=-8xqJ2xXs2A'
+          }
+        ]
+      },
+      delts: {
+        id: 'delts',
+        shortName: '9. عضلات الأكتاف (Delts)',
+        fullName: 'عضلات الأكتاف الأمامية، الجانبية والخلفية (Deltoids)',
+        view: 'front',
+        badge: 'رسمة الكتاف الأنثوية وتوازن الخصر',
+        refUrl: 'https://teachmeanatomy.info/upper-limb/muscles/shoulder/',
+        desc: 'نحت الكتاف الجانبية كيعطي تناسق رائع مع الورك وكيخلي الخصر يبان محفور ومشدود.',
+        gym: [
+          {
+            name: 'Seated Dumbbell Shoulder Press (ضغط الأكتاف بالدامبلز)',
+            setsReps: '3 جولات × 12 تكرار',
+            tip: 'خلي مرفقيك داخلين شوية لقدام بـ 30 درجة وطلعي بتحكم بلا ما تقوسي ظهرك.',
+            yt: 'https://www.youtube.com/watch?v=E9ShwbwZ1zw'
+          },
+          {
+            name: 'Dumbbell Lateral Raises (الرفرفة الجانبية للأكتاف)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'طلعي بمرفقيك حتى لمستوى الكتاف بحال إلى كتخوي كاس ديال الماء.',
+            yt: 'https://www.youtube.com/watch?v=JIhbYYA1Q90'
+          }
+        ],
+        home: [
+          {
+            name: 'Water Bottle Lateral Raises (رفرفة جانبية بـ 2 قراعي 1.5L)',
+            setsReps: '4 جولات × 20 تكرار',
+            tip: 'شدي قرعة ديال لتر ونص ف كل يد وطلعي للجنب ببطء مع حبس ثانية الفوق.',
+            yt: 'https://www.youtube.com/watch?v=JIhbYYA1Q90'
+          },
+          {
+            name: 'Seated Water Bottle Overhead Press (ضغط الأكتاف بالقراعي)',
+            setsReps: '3 جولات × 15 تكرار',
+            tip: 'جلسي على كرسي القراية ظهرك مسند ودفعي القراعي الفوق بتحكم.',
+            yt: 'https://www.youtube.com/watch?v=E9ShwbwZ1zw'
+          }
+        ]
+      },
+      arms: {
+        id: 'arms',
+        shortName: '10. الذراعين والترايسبس',
+        fullName: 'عضلات الذراعين — شد الترايسبس والبايسبس (Triceps & Biceps)',
+        view: 'back',
+        badge: 'القضاء على ترهل الذراعين من اللور',
+        refUrl: 'https://teachmeanatomy.info/upper-limb/muscles/upper-arm/',
+        desc: 'شد عضلة الترايسبس (الجهة الخلفية ديال الذراع) كيحيد الترهل نهائياً وكيخلي الذراعين مشدودين ورشيقين.',
+        gym: [
+          {
+            name: 'Rope Triceps Pushdown (دفع الحبل للترايسبس)',
+            setsReps: '4 جولات × 15 تكرار',
+            tip: 'ثبتي مرفقيك لاصقين ف جنابك وفرقي الحبل لتحت مع عصر الترايسبس.',
+            yt: 'https://www.youtube.com/watch?v=1FjkhpZsaxc'
+          },
+          {
+            name: 'Dumbbell Tricep Kickbacks (رفس الترايسبس بالدامبل)',
+            setsReps: '3 جولات × 15 تكرار لكل يد',
+            tip: 'مدي ذراعك اللور كاملة وحبسي ثانية الفوق باش تحسي بالشد.',
+            yt: 'https://www.youtube.com/watch?v=w0oo0y_I2FM'
+          }
+        ],
+        home: [
+          {
+            name: 'Water Bottle Tricep Kickbacks (ترايسبس بقرعة الماء فالدار)',
+            setsReps: '4 جولات × 15 تكرار لكل يد',
+            tip: 'حني جذعك، ثبتي مرفقك الفوق ومدي القرعة اللور بتحكم.',
+            yt: 'https://www.youtube.com/watch?v=w0oo0y_I2FM'
+          },
+          {
+            name: 'Chair Tricep Dips (غطس الترايسبس على الكرسي أو السداري)',
+            setsReps: '3 جولات × 12 تكرار',
+            tip: 'حطي يديك على حافة الكرسي وهبطي بمرفقيك مجموعين اللور.',
+            yt: 'https://www.youtube.com/watch?v=1FjkhpZsaxc'
+          }
+        ]
+      },
+      chest: {
+        id: 'chest',
+        shortName: '11. عضلات الصدر (Chest)',
+        fullName: 'عضلات الصدر العلوية (Pectoralis Major & Minor)',
+        view: 'front',
+        badge: 'شد ورفع الصدر طبيعياً وقت نزول الوزن',
+        refUrl: 'https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/',
+        desc: 'تقوية عضلة الصدر العلوية كترفع الصدر طبيعياً وقت نزول الوزن وكتعطي مظهر مشدود لأعلى الجسم.',
+        gym: [
+          {
+            name: 'Incline Dumbbell Chest Press (ضغط الصدر المائل بالدامبلز)',
+            setsReps: '3 جولات × 12 تكرار',
+            tip: 'هبطي الدامبلز ببطء لجناب صدرك العلوي ودفعي الفوق بلا ما تقيسيهم ببعضياتهم.',
+            yt: 'https://www.youtube.com/watch?v=8fXfwG4ftaQ'
+          },
+          {
+            name: 'Incline Push-Ups (تراسيون مائل على البانش)',
+            setsReps: '3 جولات × 12 تكرار',
+            tip: 'خلي جسمك مستقيم وهبطي بصدرك بتحكم كامل.',
+            yt: 'https://www.youtube.com/watch?v=8fXfwG4ftaQ'
+          }
+        ],
+        home: [
+          {
+            name: 'Incline Push-Ups on Desk / Bed (تراسيون مائل على المكتب أو السداري)',
+            setsReps: '3 جولات × 12 تكرار',
+            tip: 'حطي يديك على حافة الناموسية أو المكتب وهبطي بصدرك ف خط مستقيم.',
+            yt: 'https://www.youtube.com/watch?v=8fXfwG4ftaQ'
+          },
+          {
+            name: 'Floor Water Bottle Chest Press (ضغط الصدر بالقراعي على الزربية)',
+            setsReps: '3 جولات × 15 تكرار',
+            tip: 'تكاي على ظهرك ودفعي 2 قراعي ديال الماء الفوق مع عصر عضلة الصدر.',
+            yt: 'https://www.youtube.com/watch?v=8fXfwG4ftaQ'
+          }
+        ]
+      },
+      calves: {
+        id: 'calves',
+        shortName: '12. عضلات السمانة (Calves)',
+        fullName: 'عضلات السمانة وأسفل الساق (Gastrocnemius & Soleus)',
+        view: 'back',
+        badge: 'تنشيط الدورة الدموية ورسمة الساق المتناسقة',
+        refUrl: 'https://my.clevelandclinic.org/health/body/22220-leg-muscles',
+        desc: 'تمارين السمانة كتنشط الدورة الدموية ف الرجلين بعد الجلسة ديال القراية وكتكمل جمالية وتناسق الساقين.',
+        gym: [
+          {
+            name: 'Standing Calf Raises (رفع السمانة واقفة)',
+            setsReps: '4 جولات × 20 تكرار',
+            tip: 'طلعي على أطراف صباعك حتى لأقصى نقطة وحبسي ثانية كاملة الفوق.',
+            yt: 'https://www.youtube.com/watch?v=baEXLy09Ncc'
+          },
+          {
+            name: 'Weighted Dumbbell Calf Raises (رفع السمانة بالدامبلز)',
+            setsReps: '3 جولات × 15 تكرار',
+            tip: 'هبطي بكعب رجليك بشوية باش تجبدي السمانة وطلعي بقوة.',
+            yt: 'https://www.youtube.com/watch?v=baEXLy09Ncc'
+          }
+        ],
+        home: [
+          {
+            name: 'Single-Leg Stair Calf Raises (رفع السمانة على درجة الدروج)',
+            setsReps: '4 جولات × 20 تكرار لكل رجل',
+            tip: 'وقفي على حافة درجة أو كتاب غليظ وطلعي وهبطي بمدى حركي كامل.',
+            yt: 'https://www.youtube.com/watch?v=baEXLy09Ncc'
+          },
+          {
+            name: 'Backpack Standing Calf Raises (رفع السمانة بشكارة الكتوبة)',
+            setsReps: '4 جولات × 25 تكرار',
+            tip: 'لبسي شكارة الكتوبة وطلعي على صباع رجليك مع حبس ثانية الفوق.',
+            yt: 'https://www.youtube.com/watch?v=baEXLy09Ncc'
+          }
+        ]
+      }
+    };
+
+    // 4 MEALS x 3 OPTIONS = 12 OPTIONS
+    // Note: Macros include the exact meal items + daily egg whites/protein balance so any combination sums cleanly to 95g-100g protein, 70g-80g carbs, 45g-50g fats, ~1,360-1,415 kcal, and 13.0-16.5 DH/day!
+    const MEALS_DATA = [
+      {
+        key: 'breakfast',
+        title: '1. الفطور (08:30 — شبع طويل وبروتين رخيص)',
+        subtitle: 'بداية النهار ببروتين عالي وكاربز نقية ومضبوطة باش ما يجيكش الجوع ف المحاضرات',
+        options: [
+          {
+            id: 'b1',
+            label: 'خيار 1: أومليط 3 بيضات + شوفان العبار بالقرفة',
+            desc: '2 بيضات كاملين + 1 بياض بيض (أومليط ف مقلة بلا زيت أو بقطرة زيت العود) + 30g شوفان العبار طايب بالماء والقرفة + أتاي بلا سكر.',
+            displaySpec: '21g Protein | 20g Carbs | 310 kcal | ~3.5 درهم',
+            protein: 24,
+            carbs: 20,
+            fats: 12,
+            calories: 335,
+            costDh: 3.5
+          },
+          {
+            id: 'b2',
+            label: 'خيار 2: بيض مسلوق بالكامون + طريف خبز الدار القمح + جبن بلدي',
+            desc: '2 بيضات مسلوقين بالكامون + طريف صغير خبز الدار ديال القمح (40g) + معلقة جبن بلدي أو فرشيجة وحدة + خيار ومطيشة.',
+            displaySpec: '18g Protein | 20g Carbs | 300 kcal | ~3.5 درهم',
+            protein: 23,
+            carbs: 20,
+            fats: 12,
+            calories: 330,
+            costDh: 3.5
+          },
+          {
+            id: 'b3',
+            label: 'خيار 3: حرشة صغيرة ديال الشوفان والبيض ف المقلة',
+            desc: 'حرشة صغيرة ديال الشوفان والبيض ف المقلة (2 بيضات + 30g شوفان + شوية الملحة والزعتر) + كاس أتاي مسوس.',
+            displaySpec: '19g Protein | 21g Carbs | 305 kcal | ~3.5 درهم',
+            protein: 23,
+            carbs: 21,
+            fats: 12,
+            calories: 330,
+            costDh: 3.5
+          }
+        ]
+      },
+      {
+        key: 'lunch',
+        title: '2. الغداء (13:30 — الوجبة الرئيسية الاقتصادية وبلا خبز أو ببطاطا صغيرة)',
+        subtitle: 'أكبر جرعة بروتين ف النهار بأرخص المكونات المغربية',
+        options: [
+          {
+            id: 'l1',
+            label: 'خيار 1 (الأقوى والأرخص): سردين مشوي ف الفران + بطاطا صغيرة مسلوقة',
+            desc: '150g سردين مشوي ف الفران أو ف المقلة بلا قلي (غير بالشرمولة والحامض) + بطاطا صغيرة مسلوقة (120g) + شلاظة خيار ومطيشة وبصلة.',
+            displaySpec: '33g Protein | 24g Carbs | 410 kcal | ~4.5 درهم',
+            protein: 35,
+            carbs: 28,
+            fats: 15,
+            calories: 455,
+            costDh: 4.5
+          },
+          {
+            id: 'l2',
+            label: 'خيار 2 (القطاني ديال الدار بلا خبز): عدس/لوبيا/حمص بالمعلقة + 2 بيضات',
+            desc: 'زلافة متوسطة ديال العدس أو اللوبيا أو الحمص طايب ف الدار (كوليه بالمعلقة بلا خبز!) + 2 بيضات مسلوقين + شلاظة خضراء.',
+            displaySpec: '26g Protein | 30g Carbs | 395 kcal | ~4.0 درهم',
+            protein: 34,
+            carbs: 32,
+            fats: 14,
+            calories: 450,
+            costDh: 4.0
+          },
+          {
+            id: 'l3',
+            label: 'خيار 3 (فاش يكون الدجاج أو لاداند): 100g صدر مشحر + 3 معالق روز',
+            desc: '100g صدر الدجاج أو لاداند مشحر بالعطرية + 3 معالق كبار روز مسلوق (80g طايب) + خضرة مبخرة أو طايبة ف المرقة بلا خبز.',
+            displaySpec: '31g Protein | 23g Carbs | 380 kcal | ~6.5 درهم',
+            protein: 35,
+            carbs: 27,
+            fats: 13,
+            calories: 445,
+            costDh: 6.5
+          }
+        ]
+      },
+      {
+        key: 'snack',
+        title: '3. سناك العشية قبل السبور (17:00 — طاقة خفيفة بـ 2 إلى 3 دراهم)',
+        subtitle: 'طاقة نقية للتمرين بلا ثقل على المعدة',
+        options: [
+          {
+            id: 's1',
+            label: 'خيار 1: كاس لبن بلدي أو ياغورت طبيعي + تفاحة صغيرة + قهوة كحلة',
+            desc: 'كاس لبن بلدي أو ياغورت طبيعي مسوس (2 دراهم) + تفاحة صغيرة أو نص بنانة + قهوة كحلة أو أتاي بلا سكر قبل التمرين.',
+            displaySpec: '9g Protein | 18g Carbs | 160 kcal | ~3.0 درهم',
+            protein: 12,
+            carbs: 18,
+            fats: 7,
+            calories: 215,
+            costDh: 3.0
+          },
+          {
+            id: 's2',
+            label: 'خيار 2: 1 بيضة مسلوقة + حبة Perly أو ياغورت طبيعي + شاي أخضر',
+            desc: '1 بيضة مسلوقة + حبة Perly أو ياغورت طبيعي + شاي أخضر.',
+            displaySpec: '13g Protein | 8g Carbs | 155 kcal | ~3.5 درهم',
+            protein: 14,
+            carbs: 16,
+            fats: 8,
+            calories: 210,
+            costDh: 3.5
+          },
+          {
+            id: 's3',
+            label: 'خيار 3: كاس صغير حمص مسلوق بالكامون والحامض + كاس لبن طبيعي',
+            desc: 'كاس صغير حمص مسلوق بالكامون والحامض + كاس لبن طبيعي.',
+            displaySpec: '11g Protein | 19g Carbs | 165 kcal | ~2.5 درهم',
+            protein: 13,
+            carbs: 19,
+            fats: 7,
+            calories: 215,
+            costDh: 2.5
+          }
+        ]
+      },
+      {
+        key: 'dinner',
+        title: '4. العشاء (20:30 — بروتين خفيف وخضرة صافية | 0% كاربز و0% خبز بالليل)',
+        subtitle: 'صفر خبز وصفر نشويات بالليل باش جسمك يحرق الشحمة طول الليل وأنتِ ناعسة',
+        options: [
+          {
+            id: 'd1',
+            label: 'خيار 1: بيض بالقرعة الخضراء محكوكة والسبانخ/المعدنوس + خيار وخص',
+            desc: '2 بيضات كاملين + 1 بياض بيض مطيبين مع القرعة الخضراء محكوكة والسبانخ أو المعدنوس + طبسيل خيار وخص.',
+            displaySpec: '20g Protein | 6g Carbs | 260 kcal | ~3.0 درهم',
+            protein: 25,
+            carbs: 8,
+            fats: 12,
+            calories: 365,
+            costDh: 3.0
+          },
+          {
+            id: 'd2',
+            label: 'خيار 2: علبة طون مصفية مزيان + شلاظة خضراء كبيرة بلا خبز',
+            desc: 'علبة طون مصفية مزيان من الزيت (أو طون ديال الماء) + شلاظة كبيرة (خص، خيار، فلفلة خضراء، نص مطيشة) بالحامض والكمون بلا خبز.',
+            displaySpec: '26g Protein | 5g Carbs | 270 kcal | ~5.0 درهم',
+            protein: 27,
+            carbs: 7,
+            fats: 12,
+            calories: 375,
+            costDh: 5.0
+          },
+          {
+            id: 'd3',
+            label: 'خيار 3: 90g كفتة لاداند أو دجاج الدار + زلافة شوربة الخضرة الخضراء',
+            desc: '90g كفتة لاداند أو طريف دجاج من مرقة الدار (مقطر من ليدام) + زلافة شوربة الخضرة الخضراء (قرعة، كرافس، بورو — بلا بطاطا وبلا شعرية).',
+            displaySpec: '24g Protein | 7g Carbs | 265 kcal | ~5.0 درهم',
+            protein: 26,
+            carbs: 8,
+            fats: 12,
+            calories: 370,
+            costDh: 5.0
+          }
+        ]
+      }
+    ];
+
+    const GROCERY_LIST_DATA = [
+      { name: 'البلاطو ديال البيض (30 بيضة)', price: '~35–40 درهم (كيدوز السيمانة كاملة)', detail: 'الركيزة رقم 1 للبروتين الرخيص والنقي كل نهار' },
+      { name: 'كيلو سردين طري (مغسول بلا قلي)', price: '~13–15 درهم', detail: 'أغنى مصدر للبروتين والأوميغا 3 ف المغرب' },
+      { name: 'نص كيلو عدس + نص كيلو حمص', price: '~12 درهم', detail: 'بروتين نباتي وألياف كتقطع الجوع بلا خبز' },
+      { name: 'كيلو شوفان العبار (Bulk Oats)', price: '~15 درهم (كيدوز شهر كامل!)', detail: '30g ف الفطور كتعطيك طاقة نقية طول الصباح' },
+      { name: 'خضرة خضراء: خيار، خص، قرعة خضراء، فلفلة', price: '~12 درهم', detail: 'حجم كبير ف المعدة وسعرات شبه منعدمة بالليل' },
+      { name: 'لبن بلدي أو 4 ياغورت طبيعي مسوس', price: '~8–10 دراهم', detail: 'سناك اقتصادي بـ 2 دراهم وغني بالبروبيوتيك' },
+      { name: '2 علب طون أو 250g كفتة/صدر لاداند', price: '~15–18 درهم', detail: 'لتنويع العشاء والغداء وسط السيمانة' }
+    ];
+
+    const WEEK_SPLIT_DATA = [
+      {
+        dayName: 'الإثنين',
+        tag: 'Lower Body A',
+        title: 'المؤخرة والفخذ الأمامي (Glutes & Quads Sculpt)',
+        cardio: '20 دقيقة مشي سريع أو عقبة خفيفة مباشرة بعد الأوزان + 8,500 خطوة',
+        exercises: [
+          'Hip Thrust (أو Single-Leg Hip Thrust على السداري ف الدار) — 4 جولات × 12 تكرار',
+          'Goblet Squat (سكوات الكأس بالدامبل أو بقرعة 5 لتر) — 4 جولات × 12–15 تكرار',
+          'Bulgarian Split Squat (السكوات البلغاري على كرسي) — 3 جولات × 10 تكرارات لكل رجل',
+          'Sumo Squat (سكوات واسع لشد الفخذ الداخلي والمؤخرة) — 3 جولات × 15 تكرار',
+          'Plank + Stomach Vacuum (ثبات البلانك + شفط البطن) — 3 جولات × 45 ثانية',
+          'كارديو بعد التمرين: 20 دقيقة مشي سريع (Fast/Incline Walk)'
+        ]
+      },
+      {
+        dayName: 'الثلاثاء',
+        tag: 'Upper Body A',
+        title: 'الظهر، الأكتاف وشد الذراعين (Back, Delts & Arms)',
+        cardio: '25 دقيقة مشي سريع لحرق الدهون + شرب 3.5 لتر ماء',
+        exercises: [
+          'Wide-Grip Lat Pulldown (أو سحب بشكارة/فوطة ف الدار) — 4 جولات × 12 تكرار',
+          'Seated Dumbbell Shoulder Press (ضغط الأكتاف) — 3 جولات × 12 تكرار',
+          'Dumbbell / Water Bottle Lateral Raises (رفرفة جانبية للكتاف) — 4 جولات × 15–20 تكرار',
+          'Tricep Kickbacks / Rope Pushdown (شد الترايسبس من اللور) — 4 جولات × 15 تكرار',
+          'Stomach Vacuum الصباح — 4 جولات × 30 ثانية',
+          'كارديو بعد التمرين: 25 دقيقة مشي سريع'
+        ]
+      },
+      {
+        dayName: 'الأربعاء',
+        tag: 'Active Burn & Waist',
+        title: 'راحة من الأوزان + نحت الخصر وكارديو حرق الشحمة',
+        cardio: '40 دقيقة مشي سريع مستمر + الوصول لـ 10,000 خطوة',
+        exercises: [
+          'Stomach Vacuum على الريق (4 جولات × 30 ثانية بتركيز عالي)',
+          'Deadbug Core Form (شد الحزام البطني السفلي) — 3 جولات × 16 تكرار',
+          '40 دقيقة مشي سريع ف الهواء الطلق أو التريدميل',
+          'إكمال 10,000 خطوة ف النهار كامل',
+          'التزام 100% بـ 0 خبز و0 كاربز ف العشاء + 3.5 لتر ماء'
+        ]
+      },
+      {
+        dayName: 'الخميس',
+        tag: 'Lower Body B',
+        title: 'المؤخرة، الفخذ الخلفي والسمانة (Glutes, Hamstrings & Calves)',
+        cardio: '20 دقيقة كارديو مباشرة بعد حصة الرجلين',
+        exercises: [
+          'Romanian Deadlift - RDL (الرفعة الرومانية بالدامبلز أو شكارة تقيلة) — 4 جولات × 12 تكرار',
+          'Single-Leg Hip Thrust / Glute Bridge — 4 جولات × 12–15 تكرار لكل رجل',
+          '45° Back Extension / Floor Superman (تمديد الظهر والمؤخرة) — 3 جولات × 15 تكرار',
+          'Side-Lying Hip Abduction (رفع الرجل جانبياً لعضلة Gluteus Medius) — 3 جولات × 20 تكرار',
+          'Standing Calf Raises (رفع السمانة واقفة) — 4 جولات × 20 تكرار',
+          'كارديو بعد التمرين: 20 دقيقة مشي سريع'
+        ]
+      },
+      {
+        dayName: 'الجمعة',
+        tag: 'Upper Body B & Posture',
+        title: 'أعلى الظهر، اللاتس، الصدر والبطن (Posture & Hourglass)',
+        cardio: '25 دقيقة كارديو نشيط بعد التمرين',
+        exercises: [
+          'Cable / Towel Face Pulls (سحب لأعلى الظهر والكتف الخلفي) — 4 جولات × 15 تكرار',
+          'Single-Arm Dumbbell / Backpack Row (تجديف بيد وحدة للاتس) — 4 جولات × 12 تكرار لكل يد',
+          'Incline Dumbbell Press / Incline Push-ups (ضغط الصدر المائل) — 3 جولات × 12 تكرار',
+          'Chair Tricep Dips (غطس الترايسبس على الكرسي) — 3 جولات × 12 تكرار',
+          'Stomach Vacuum + Plank — 4 جولات × 30 ثانية',
+          'كارديو بعد التمرين: 25 دقيقة مشي سريع'
+        ]
+      },
+      {
+        dayName: 'السبت',
+        tag: 'Glute Pump & Long Walk',
+        title: 'ضخ دموي للمؤخرة ف الدار + مشي طويل ف الهواء الطلق',
+        cardio: '45 دقيقة مشي نشيط ف الهواء الطلق لتفريغ ستريس القراية',
+        exercises: [
+          'Floor Glute Bridges (جسر المؤخرة بوزن الجسم مع حبس 3 ثواني الفوق) — 3 جولات × 25 تكرار',
+          'Fire Hydrants & Kickbacks (تمارين تنشيط الأرداف على الزربية) — 3 جولات × 20 تكرار لكل رجل',
+          'Plank + Deadbug — 3 جولات × 45 ثانية',
+          '45 دقيقة مشي نشيط ف الهواء الطلق',
+          'تحضير تقدية السيمانة الجاية بـ ~90-100 درهم'
+        ]
+      },
+      {
+        dayName: 'الأحد',
+        tag: 'Full Recovery',
+        title: 'راحة تامة للاستشفاء العضلي وتجديد الطاقة',
+        cardio: 'مشية خفيفة مريحة + نعاس 8 ساعات',
+        exercises: [
+          'أخذ الوزن الصباح على الريق (بعد الطواليط) وتسجيله ف التاب 1',
+          'شرب 3.5 لتر ديال الماء كاملة (14 كاس) لتصفية الجسم',
+          '10 دقائق حركات إطالة واسترخاء (Stretching) للظهر والرجلين',
+          'الالتزام بـ 95g–100g بروتين حتى ف نهار الراحة حيت العضل كيتبنى ف وقت الراحة!',
+          'نعاس بكري (7–8 ساعات) باش تبداي السيمانة الجديدة بطاقة عالية'
+        ]
+      }
+    ];
+
+    // ============================================================================
+    // 3. TAB SWITCHER
+    // ============================================================================
+    function switchTab(tabNum) {
+      playSound('click');
+      for (let i = 1; i <= 5; i++) {
+        const panel = document.getElementById('tab-panel-' + i);
+        const btn = document.getElementById('tab-btn-' + i);
+        if (panel) {
+          if (i === tabNum) panel.classList.remove('hidden');
+          else panel.classList.add('hidden');
+        }
+        if (btn) {
+          if (i === tabNum) {
+            btn.className = 'tab-nav-btn flex-1 min-h-[44px] px-4 py-2.5 rounded-xl text-xs md:text-sm font-extrabold transition-all whitespace-nowrap shrink-0 bg-fiercerose text-white shadow-lg shadow-fiercerose/30';
+          } else {
+            btn.className = 'tab-nav-btn flex-1 min-h-[44px] px-4 py-2.5 rounded-xl text-xs md:text-sm font-extrabold transition-all whitespace-nowrap shrink-0 text-slate-300 hover:text-white hover:bg-white/5';
+          }
+        }
+      }
+    }
+
+    // ============================================================================
+    // 4. TAB 1 LOGIC: WEIGHT RECOMP, 14 WATER CUPS, 6 HABITS & CHECKOUT
+    // ============================================================================
+    function calculateBmiValue(weightKg) {
+      const h = 1.64;
+      return (weightKg / (h * h)).toFixed(1);
+    }
+
+    function renderWeightCard() {
+      const startW = 76.0;
+      const goalW = 60.0;
+      const currW = Number(appState.currentWeight) || 76.0;
+      const lost = Math.max(0, startW - currW);
+      const rem = Math.max(0, currW - goalW);
+      const pct = Math.min(100, Math.max(0, Math.round(((startW - currW) / (startW - goalW)) * 100)));
+      const bmi = calculateBmiValue(currW);
+
+      document.getElementById('stat-current-weight').textContent = currW.toFixed(1);
+      document.getElementById('stat-remaining-weight').textContent = rem.toFixed(1);
+      document.getElementById('stat-lost-weight').textContent = lost.toFixed(1);
+      document.getElementById('stat-current-bmi').textContent = bmi;
+      document.getElementById('weight-progress-pct').textContent = pct + '%';
+      document.getElementById('weight-progress-bar').style.width = Math.max(3, pct) + '%';
+
+      const inputEl = document.getElementById('new-weight-input');
+      if (inputEl && !inputEl.value) {
+        inputEl.value = currW.toFixed(1);
+      }
+    }
+
+    function handleSaveWeight() {
+      const inputEl = document.getElementById('new-weight-input');
+      if (!inputEl) return;
+      const val = parseFloat(inputEl.value);
+      if (isNaN(val) || val < 45 || val > 120) {
+        showToast('دخلي وزن صحيح ما بين 45 و 120 كغ يا إبتسام 💡', '⚠️');
+        return;
+      }
+      appState.currentWeight = Number(val.toFixed(1));
+      saveAppState();
+      renderWeightCard();
+      updateTimelineProjection();
+      playSound('victory');
+      const rem = Math.max(0, appState.currentWeight - 60.0).toFixed(1);
+      showToast(`تبارك الله عليك يا إبتسام! تسجل وزنك الجديد (${appState.currentWeight.toFixed(1)} kg) — باقي ليك ${rem} kg للهدف!`, '⚖️');
+    }
+
+    function renderWaterStation() {
+      const cups = Math.min(14, Math.max(0, Number(appState.waterCups) || 0));
+      const ml = cups * 250;
+      const pct = Math.round((ml / 3500) * 100);
+
+      document.getElementById('water-ml-display').textContent = `${ml} / 3500 ml`;
+      document.getElementById('water-cups-display').textContent = `${cups} من 14 كاس (250 ml للكاس)`;
+      document.getElementById('water-progress-bar').style.width = `${pct}%`;
+
+      const grid = document.getElementById('water-cups-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      for (let i = 1; i <= 14; i++) {
+        const isFilled = i <= cups;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.setAttribute('aria-label', `كاس الماء رقم ${i} (${i * 250} ml)`);
+        btn.className = `water-cup min-h-[62px] rounded-2xl border p-2 flex flex-col items-center justify-center gap-0.5 ${
+          isFilled
+            ? 'filled text-white'
+            : 'border-white/10 bg-obsidian/70 text-slate-400 hover:border-holocyan/40'
+        }`;
+        btn.onclick = () => {
+          if (appState.waterCups === i) {
+            setWaterCups(i - 1);
+          } else {
+            setWaterCups(i);
+          }
+        };
+        btn.innerHTML = `
+          <span class="text-base">${isFilled ? '💧' : '🥛'}</span>
+          <span class="ltr text-[11px] font-black">${i * 250}</span>
+        `;
+        grid.appendChild(btn);
+      }
+    }
+
+    function setWaterCups(newCount) {
+      const clamped = Math.min(14, Math.max(0, newCount));
+      const prev = appState.waterCups;
+      appState.waterCups = clamped;
+
+      // Auto-check Habit #1 when reaching 3,500 ml (14 cups)
+      if (clamped === 14 && !appState.habits[0]) {
+        appState.habits[0] = true;
+        playSound('victory');
+        showToast('برافو إبتسام! كملتي 3.5 لتر ديال الماء (3,500 ml) وتكوشات المهمة الأولى أوتوماتيكياً! 💧🔥', '💧');
+      } else if (clamped > prev) {
+        playSound('water');
+      } else {
+        playSound('click');
+      }
+
+      saveAppState();
+      renderWaterStation();
+      renderDailyHabits();
+    }
+
+    function adjustWaterCups(delta) {
+      setWaterCups((Number(appState.waterCups) || 0) + delta);
+    }
+
+    function resetWaterCups() {
+      appState.waterCups = 0;
+      appState.habits[0] = false;
+      saveAppState();
+      playSound('click');
+      renderWaterStation();
+      renderDailyHabits();
+      showToast('تم تصفير عداد الماء ديال النهار.', '↺');
+    }
+
+    function renderDailyHabits() {
+      const container = document.getElementById('daily-habits-list');
+      const badge = document.getElementById('habits-counter-badge');
+      if (!container) return;
+
+      const completedCount = appState.habits.filter(Boolean).length;
+      if (badge) badge.textContent = `${completedCount} / 6 مكتملة`;
+
+      container.innerHTML = '';
+      DAILY_HABITS_DATA.forEach((h, idx) => {
+        const checked = Boolean(appState.habits[idx]);
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => toggleHabit(idx);
+        btn.className = `w-full text-right rounded-2xl p-3.5 border transition-all flex items-start gap-3 ${
+          checked
+            ? 'bg-mint/15 border-mint/50 text-white shadow-md shadow-mint/10'
+            : 'glass-card-subtle hover:border-softrose/40 text-slate-200'
+        }`;
+        btn.innerHTML = `
+          <div class="w-6 h-6 rounded-lg flex items-center justify-center shrink-0 mt-0.5 font-black text-xs ${
+            checked ? 'bg-mint text-obsidian' : 'border border-white/25 bg-obsidian/80 text-transparent'
+          }">✓</div>
+          <div class="flex-1">
+            <div class="text-xs sm:text-sm font-extrabold leading-snug ${checked ? 'text-mint' : 'text-white'}">${h.title}</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">${h.sub}</div>
+          </div>
+        `;
+        container.appendChild(btn);
+      });
+    }
+
+    function toggleHabit(idx) {
+      appState.habits[idx] = !appState.habits[idx];
+      if (idx === 0 && appState.habits[0] && appState.waterCups < 14) {
+        appState.waterCups = 14;
+        renderWaterStation();
+      }
+      saveAppState();
+      playSound('click');
+      renderDailyHabits();
+    }
+
+    function renderStreakGrid() {
+      const streak = Number(appState.streakCount) || 0;
+      const headerEl = document.getElementById('header-streak-count');
+      if (headerEl) headerEl.textContent = String(streak);
+
+      const grid = document.getElementById('streak-14-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      const activeCircles = streak % 15;
+      for (let i = 1; i <= 14; i++) {
+        const isLit = i <= activeCircles || (streak >= 14 && activeCircles === 0);
+        const cell = document.createElement('div');
+        cell.className = `h-9 rounded-xl flex items-center justify-center text-xs font-black ltr transition-all ${
+          isLit
+            ? 'bg-gradient-to-br from-fiercerose to-softrose text-obsidian shadow-md shadow-fiercerose/30'
+            : 'bg-obsidian/80 border border-white/10 text-slate-500'
+        }`;
+        cell.textContent = isLit ? '🔥' : i;
+        grid.appendChild(cell);
+      }
+
+      const summary = document.getElementById('streak-grid-summary');
+      if (summary) {
+        summary.textContent = `${streak} أيام ديال الالتزام المتواصل — كملي طريقك لـ 60 kg!`;
+      }
+    }
+
+    function completeDailyCheckout() {
+      const completedCount = appState.habits.filter(Boolean).length;
+      if (completedCount === 0) {
+        // Check all habits automatically if she clicks checkout directly or prompt gently
+        appState.habits = [true, true, true, true, true, true];
+        appState.waterCups = 14;
+        renderWaterStation();
+        renderDailyHabits();
+      }
+      appState.streakCount = (Number(appState.streakCount) || 0) + 1;
+      saveAppState();
+      renderStreakGrid();
+      playSound('victory');
+      showToast(`نهار واعر يا إبتسام! تسجل الـ Checkout وطلعات سلسلة الالتزام ديالك لـ ${appState.streakCount} أيام 🔥👑`, '🏆');
+    }
+
+    // ============================================================================
+    // 5. TAB 2 LOGIC: 3D HOLOGRAM, 11 MUSCLES, GYM VS HOME & YOUTUBE LINKS
+    // ============================================================================
+    function renderMusclePills() {
+      const container = document.getElementById('muscle-pills-container');
+      if (!container) return;
+      container.innerHTML = '';
+
+      Object.values(MUSCLES_DATA).forEach((m) => {
+        const isActive = appState.selectedMuscle === m.id;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => selectMuscle(m.id);
+        btn.className = `min-h-[38px] px-3.5 py-1.5 rounded-xl text-xs font-extrabold transition-all whitespace-nowrap shrink-0 ${
+          isActive
+            ? 'bg-fiercerose text-white shadow-md shadow-fiercerose/30'
+            : 'glass-card-subtle text-slate-300 hover:text-white hover:border-softrose/40'
+        }`;
+        btn.textContent = m.shortName;
+        container.appendChild(btn);
+      });
+    }
+
+    function setHologramView(view) {
+      appState.hologramView = view;
+      saveAppState();
+      const backSvg = document.getElementById('svg-hologram-back');
+      const frontSvg = document.getElementById('svg-hologram-front');
+      const backBtn = document.getElementById('holo-view-back');
+      const frontBtn = document.getElementById('holo-view-front');
+
+      if (view === 'back') {
+        backSvg.classList.remove('hidden');
+        frontSvg.classList.add('hidden');
+        backBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all bg-holocyan text-obsidian';
+        frontBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all text-slate-300 hover:text-white';
+      } else {
+        frontSvg.classList.remove('hidden');
+        backSvg.classList.add('hidden');
+        frontBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all bg-holocyan text-obsidian';
+        backBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all text-slate-300 hover:text-white';
+      }
+      highlightActiveSvgMuscle();
+    }
+
+    function setWorkoutPlaceMode(mode) {
+      appState.workoutPlaceMode = mode;
+      saveAppState();
+      playSound('click');
+      const gymBtn = document.getElementById('mode-btn-gym');
+      const homeBtn = document.getElementById('mode-btn-home');
+      if (mode === 'gym') {
+        gymBtn.className = 'min-h-[40px] px-4 py-1.5 rounded-xl text-xs font-extrabold transition-all whitespace-nowrap shrink-0 bg-fiercerose text-white shadow';
+        homeBtn.className = 'min-h-[40px] px-4 py-1.5 rounded-xl text-xs font-extrabold transition-all whitespace-nowrap shrink-0 text-slate-300 hover:text-white';
+      } else {
+        homeBtn.className = 'min-h-[40px] px-4 py-1.5 rounded-xl text-xs font-extrabold transition-all whitespace-nowrap shrink-0 bg-mint text-obsidian shadow';
+        gymBtn.className = 'min-h-[40px] px-4 py-1.5 rounded-xl text-xs font-extrabold transition-all whitespace-nowrap shrink-0 text-slate-300 hover:text-white';
+      }
+      renderSelectedMuscleDetails();
+    }
+
+    function selectMuscle(muscleId) {
+      if (!MUSCLES_DATA[muscleId]) return;
+      appState.selectedMuscle = muscleId;
+      const targetView = MUSCLES_DATA[muscleId].view;
+      setHologramView(targetView);
+      saveAppState();
+      playSound('click');
+      renderMusclePills();
+      renderSelectedMuscleDetails();
+      highlightActiveSvgMuscle();
+    }
+
+    function highlightActiveSvgMuscle() {
+      const allZones = document.querySelectorAll('.muscle-zone');
+      allZones.forEach((zone) => {
+        if (zone.getAttribute('data-muscle') === appState.selectedMuscle) {
+          zone.classList.add('active-muscle');
+        } else {
+          zone.classList.remove('active-muscle');
+        }
+      });
+    }
+
+    function renderSelectedMuscleDetails() {
+      const m = MUSCLES_DATA[appState.selectedMuscle] || MUSCLES_DATA.glutes;
+      document.getElementById('holo-active-muscle-title').textContent = m.fullName;
+      document.getElementById('muscle-detail-badge').textContent = m.badge;
+      document.getElementById('muscle-detail-name').textContent = m.fullName;
+      document.getElementById('muscle-detail-desc').textContent = m.desc;
+      const linkEl = document.getElementById('muscle-science-link');
+      if (linkEl) linkEl.href = m.refUrl;
+
+      const list = m.gym && appState.workoutPlaceMode === 'gym' ? m.gym : m.home;
+      const container = document.getElementById('muscle-exercises-list');
+      if (!container) return;
+      container.innerHTML = '';
+
+      list.forEach((ex, exIdx) => {
+        const card = document.createElement('div');
+        card.className = 'glass-card-subtle rounded-2xl p-4 border border-white/10 space-y-3';
+
+        let setsHtml = '';
+        for (let s = 1; s <= 4; s++) {
+          const setKey = `${m.id}_${appState.workoutPlaceMode}_${exIdx}_s${s}`;
+          const isDone = Boolean(appState.completedSets[setKey]);
+          setsHtml += `
+            <button
+              type="button"
+              onclick="toggleExerciseSet('${setKey}')"
+              class="min-h-[38px] px-3 py-1.5 rounded-xl text-xs font-extrabold transition-all flex items-center justify-center gap-1.5 ${
+                isDone
+                  ? 'bg-mint text-obsidian shadow shadow-mint/30'
+                  : 'bg-obsidian/80 border border-white/15 text-slate-300 hover:border-softrose/50'
+              }"
+            >
+              <span>${isDone ? '✓' : '○'}</span>
+              <span>جولة ${s}</span>
+            </button>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <span class="text-xs font-extrabold text-softrose block">${appState.workoutPlaceMode === 'gym' ? '🏋️‍♀️ تمرين لاصال' : '🏠 تمرين الدار بلا معدات'} · ${ex.setsReps}</span>
+              <h4 class="text-base sm:text-lg font-black text-white mt-0.5 leading-snug">${ex.name}</h4>
+            </div>
+            <a
+              href="${ex.yt}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="min-h-[38px] px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-md shadow-red-600/25 transition-all whitespace-nowrap shrink-0 self-start sm:self-center"
+            >
+              <span>▶ شوفي الطريقة ف يوتيوب</span>
+            </a>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed bg-obsidian/60 rounded-xl p-3 border border-white/5">
+            🎯 <strong class="text-holocyan">نصيحة الأداء الصحيح:</strong> ${ex.tip}
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+            ${setsHtml}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function toggleExerciseSet(setKey) {
+      appState.completedSets[setKey] = !appState.completedSets[setKey];
+      saveAppState();
+      playSound('click');
+      renderSelectedMuscleDetails();
+    }
+
+    function resetMuscleSets() {
+      const prefix = `${appState.selectedMuscle}_${appState.workoutPlaceMode}_`;
+      Object.keys(appState.completedSets).forEach((k) => {
+        if (k.startsWith(prefix)) delete appState.completedSets[k];
+      });
+      saveAppState();
+      playSound('click');
+      renderSelectedMuscleDetails();
+      showToast('تم تصفير جولات هاد العضلة.', '↺');
+    }
+
+    // ============================================================================
+    // 6. TAB 3 LOGIC: BUDGET MEAL SWAPPER, LIVE MACRO CALCULATOR & GROCERY LIST
+    // ============================================================================
+    function renderMealsSwapper() {
+      const grid = document.getElementById('meals-swapper-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      let totalProtein = 0;
+      let totalCarbs = 0;
+      let totalFats = 0;
+      let totalCalories = 0;
+      let totalCost = 0;
+
+      MEALS_DATA.forEach((meal) => {
+        const selectedIdx = Number(appState.selectedMealOptions[meal.key]) || 0;
+        const activeOption = meal.options[selectedIdx] || meal.options[0];
+
+        totalProtein += activeOption.protein;
+        totalCarbs += activeOption.carbs;
+        totalFats += activeOption.fats;
+        totalCalories += activeOption.calories;
+        totalCost += activeOption.costDh;
+
+        const card = document.createElement('div');
+        card.className = 'glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4';
+
+        let optionsHtml = '';
+        meal.options.forEach((opt, idx) => {
+          const isSelected = idx === selectedIdx;
+          optionsHtml += `
+            <button
+              type="button"
+              onclick="selectMealOption('${meal.key}', ${idx})"
+              class="w-full text-right rounded-2xl p-3.5 border transition-all space-y-1.5 ${
+                isSelected
+                  ? 'bg-fiercerose/20 border-fiercerose text-white shadow-lg shadow-fiercerose/15'
+                  : 'glass-card-subtle hover:border-softrose/35 text-slate-300'
+              }"
+            >
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs sm:text-sm font-black ${isSelected ? 'text-softrose' : 'text-white'}">${opt.label}</span>
+                <span class="text-xs font-black ${isSelected ? 'text-mint' : 'text-slate-400'}">${isSelected ? '✓ مختار دابا' : 'اختاري'}</span>
+              </div>
+              <p class="text-xs text-slate-200 leading-relaxed">${opt.desc}</p>
+              <div class="ltr text-[11px] font-extrabold text-holocyan pt-0.5">${opt.displaySpec}</div>
+            </button>
+          `;
+        });
+
+        card.innerHTML = `
+          <div class="space-y-2.5">
+            <div>
+              <h4 class="text-base sm:text-lg font-black text-white">${meal.title}</h4>
+              <p class="text-xs text-slate-400">${meal.subtitle}</p>
+            </div>
+            <div class="space-y-2.5 pt-1">
+              ${optionsHtml}
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      // Update Live Banner
+      document.getElementById('live-macro-protein').textContent = `${totalProtein}g`;
+      document.getElementById('live-macro-carbs').textContent = `${totalCarbs}g`;
+      document.getElementById('live-macro-calories').textContent = totalCalories.toLocaleString('en-US');
+      document.getElementById('live-macro-fats').textContent = `الدهون الصحية: ${totalFats}g (زيت العود، أصفر البيض، سردين)`;
+      document.getElementById('live-macro-cost').textContent = totalCost.toFixed(1);
+    }
+
+    function selectMealOption(mealKey, optionIndex) {
+      appState.selectedMealOptions[mealKey] = optionIndex;
+      saveAppState();
+      playSound('click');
+      renderMealsSwapper();
+    }
+
+    function renderGroceryChecklist() {
+      const container = document.getElementById('grocery-checklist-container');
+      const countBadge = document.getElementById('grocery-checked-count');
+      if (!container) return;
+
+      const checkedTotal = appState.groceryChecked.filter(Boolean).length;
+      if (countBadge) countBadge.textContent = `${checkedTotal} / ${GROCERY_LIST_DATA.length}`;
+
+      container.innerHTML = '';
+      GROCERY_LIST_DATA.forEach((item, idx) => {
+        const isChecked = Boolean(appState.groceryChecked[idx]);
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => toggleGroceryItem(idx);
+        btn.className = `w-full text-right rounded-2xl p-3 border transition-all flex items-center justify-between gap-3 ${
+          isChecked
+            ? 'bg-mint/15 border-mint/40 text-white'
+            : 'glass-card-subtle hover:border-white/25 text-slate-200'
+        }`;
+        btn.innerHTML = `
+          <div class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded-md flex items-center justify-center text-xs font-black shrink-0 ${
+              isChecked ? 'bg-mint text-obsidian' : 'border border-white/25 bg-obsidian'
+            }">${isChecked ? '✓' : ''}</div>
+            <div>
+              <div class="text-xs sm:text-sm font-extrabold ${isChecked ? 'line-through text-slate-300' : 'text-white'}">${item.name}</div>
+              <div class="text-[11px] text-slate-400">${item.detail}</div>
+            </div>
+          </div>
+          <span class="text-xs font-black text-softrose shrink-0">${item.price}</span>
+        `;
+        container.appendChild(btn);
+      });
+    }
+
+    function toggleGroceryItem(idx) {
+      appState.groceryChecked[idx] = !appState.groceryChecked[idx];
+      saveAppState();
+      playSound('click');
+      renderGroceryChecklist();
+    }
+
+    function resetGroceryList() {
+      appState.groceryChecked = GROCERY_LIST_DATA.map(() => false);
+      saveAppState();
+      playSound('click');
+      renderGroceryChecklist();
+      showToast('تم تصفير قائمة التقدية الأسبوعية.', '🛒');
+    }
+
+    // ============================================================================
+    // 7. TAB 4 LOGIC: 7-DAY SPLIT SELECTOR & SMART WORKOUT TIMER
+    // ============================================================================
+    function renderWeekSplit() {
+      const tabsContainer = document.getElementById('week-days-tabs');
+      const headerContainer = document.getElementById('selected-day-header');
+      const exercisesContainer = document.getElementById('selected-day-exercises');
+      const badge = document.getElementById('day-completed-badge');
+      if (!tabsContainer || !headerContainer || !exercisesContainer) return;
+
+      const dayIdx = Number(appState.selectedDayIndex) || 0;
+      const currentDay = WEEK_SPLIT_DATA[dayIdx] || WEEK_SPLIT_DATA[0];
+
+      tabsContainer.innerHTML = '';
+      WEEK_SPLIT_DATA.forEach((d, idx) => {
+        const isActive = idx === dayIdx;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => selectWeekDay(idx);
+        btn.className = `min-h-[44px] py-2 px-2 rounded-xl text-xs font-extrabold transition-all flex flex-col items-center justify-center ${
+          isActive
+            ? 'bg-fiercerose text-white shadow-lg shadow-fiercerose/30'
+            : 'glass-card-subtle text-slate-300 hover:text-white'
+        }`;
+        btn.innerHTML = `
+          <span>${d.dayName}</span>
+          <span class="ltr text-[10px] opacity-80">${d.tag.split(' ')[0]}</span>
+        `;
+        tabsContainer.appendChild(btn);
+      });
+
+      headerContainer.innerHTML = `
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="ltr text-xs font-black text-softrose">${currentDay.tag}</span>
+          <span class="text-xs font-bold text-holocyan">🏃‍♀️ ${currentDay.cardio}</span>
+        </div>
+        <h4 class="text-lg font-black text-white">${currentDay.dayName} — ${currentDay.title}</h4>
+      `;
+
+      exercisesContainer.innerHTML = '';
+      let doneCount = 0;
+      currentDay.exercises.forEach((exText, exIdx) => {
+        const key = `day_${dayIdx}_ex_${exIdx}`;
+        const isDone = Boolean(appState.dayExercisesChecked[key]);
+        if (isDone) doneCount++;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => toggleDayExercise(key);
+        btn.className = `w-full text-right rounded-2xl p-3.5 border transition-all flex items-center gap-3 ${
+          isDone
+            ? 'bg-mint/15 border-mint/45 text-white'
+            : 'glass-card-subtle hover:border-softrose/35 text-slate-200'
+        }`;
+        btn.innerHTML = `
+          <div class="w-6 h-6 rounded-lg flex items-center justify-center text-xs font-black shrink-0 ${
+            isDone ? 'bg-mint text-obsidian' : 'border border-white/25 bg-obsidian'
+          }">${isDone ? '✓' : exIdx + 1}</div>
+          <span class="text-xs sm:text-sm font-bold ${isDone ? 'text-mint' : 'text-white'}">${exText}</span>
+        `;
+        exercisesContainer.appendChild(btn);
+      });
+
+      if (badge) {
+        badge.textContent = `${doneCount} / ${currentDay.exercises.length} تمارين مكتملة`;
+      }
+    }
+
+    function selectWeekDay(idx) {
+      appState.selectedDayIndex = idx;
+      saveAppState();
+      playSound('click');
+      renderWeekSplit();
+    }
+
+    function toggleDayExercise(key) {
+      appState.dayExercisesChecked[key] = !appState.dayExercisesChecked[key];
+      saveAppState();
+      playSound('click');
+      renderWeekSplit();
+    }
+
+    // Smart Workout Timer State
+    let timerTotalSeconds = 60;
+    let timerRemainingSeconds = 60;
+    let timerInterval = null;
+
+    function formatTimerMMSS(sec) {
+      const m = Math.floor(sec / 60);
+      const s = sec % 60;
+      return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    }
+
+    function updateTimerUI() {
+      const digits = document.getElementById('timer-digits');
+      const bar = document.getElementById('timer-progress-bar');
+      const startBtn = document.getElementById('timer-start-btn');
+      if (digits) digits.textContent = formatTimerMMSS(timerRemainingSeconds);
+      if (bar) {
+        const pct = timerTotalSeconds > 0 ? Math.round((timerRemainingSeconds / timerTotalSeconds) * 100) : 0;
+        bar.style.width = `${pct}%`;
+      }
+      if (startBtn) {
+        startBtn.textContent = timerInterval ? 'إيقاف مؤقت ⏸' : 'تشغيل التايمر ▶';
+      }
+    }
+
+    function setTimerPreset(seconds, label) {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+      timerTotalSeconds = seconds;
+      timerRemainingSeconds = seconds;
+      const lbl = document.getElementById('timer-mode-label');
+      if (lbl) lbl.textContent = label;
+      playSound('click');
+      updateTimerUI();
+    }
+
+    function adjustTimerSeconds(delta) {
+      timerRemainingSeconds = Math.max(5, Math.min(600, timerRemainingSeconds + delta));
+      timerTotalSeconds = Math.max(timerTotalSeconds, timerRemainingSeconds);
+      playSound('click');
+      updateTimerUI();
+    }
+
+    function toggleTimerStartPause() {
+      playSound('click');
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        updateTimerUI();
+        return;
+      }
+      if (timerRemainingSeconds <= 0) {
+        timerRemainingSeconds = timerTotalSeconds || 60;
+      }
+      timerInterval = setInterval(() => {
+        timerRemainingSeconds = Math.max(0, timerRemainingSeconds - 1);
+        updateTimerUI();
+        if (timerRemainingSeconds === 0) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+          updateTimerUI();
+          playSound('victory');
+          showToast('سالات وقت الراحة/التمرين يا إبتسام! يالاه للجولة الجاية بقوة 🔥💪', '⏱️');
+        }
+      }, 1000);
+      updateTimerUI();
+    }
+
+    function resetTimer() {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+      timerRemainingSeconds = timerTotalSeconds;
+      playSound('click');
+      updateTimerUI();
+    }
+
+    // ============================================================================
+    // 8. TAB 5 LOGIC: CENTIMETER TRACKER (WHR) & 76->60 TIMELINE PROJECTOR
+    // ============================================================================
+    function renderCmMeasurements() {
+      const m = appState.measurements || { waist: 82, hips: 106, thigh: 61, arm: 30 };
+      const wInput = document.getElementById('cm-waist-input');
+      const hInput = document.getElementById('cm-hips-input');
+      const tInput = document.getElementById('cm-thigh-input');
+      const aInput = document.getElementById('cm-arm-input');
+
+      if (wInput) wInput.value = m.waist;
+      if (hInput) hInput.value = m.hips;
+      if (tInput) tInput.value = m.thigh;
+      if (aInput) aInput.value = m.arm;
+
+      updateWhrDisplay(m.waist, m.hips);
+    }
+
+    function updateWhrDisplay(waist, hips) {
+      const ratio = hips > 0 ? (waist / hips).toFixed(2) : '0.00';
+      document.getElementById('whr-ratio-value').textContent = ratio;
+      const statusEl = document.getElementById('whr-status-text');
+      const numRatio = parseFloat(ratio);
+      if (numRatio <= 0.75) {
+        statusEl.textContent = 'خصر منحوت وتناسق الساعة الرملية مثالي جداً (Elite Hourglass)';
+      } else if (numRatio <= 0.80) {
+        statusEl.textContent = 'تناسق الساعة الرملية ممتاز (Athletic Hourglass)';
+      } else {
+        statusEl.textContent = 'في طور النحت — كملي تمارين Vacuum واللاتس والـ Glutes!';
+      }
+    }
+
+    function saveCmMeasurements() {
+      const waist = parseFloat(document.getElementById('cm-waist-input').value) || 82;
+      const hips = parseFloat(document.getElementById('cm-hips-input').value) || 106;
+      const thigh = parseFloat(document.getElementById('cm-thigh-input').value) || 61;
+      const arm = parseFloat(document.getElementById('cm-arm-input').value) || 30;
+
+      appState.measurements = { waist, hips, thigh, arm };
+      saveAppState();
+      updateWhrDisplay(waist, hips);
+      playSound('victory');
+      showToast(`تم حفظ قياساتك بالسنتيم! نسبة الخصر للورك (WHR) هي ${(waist / hips).toFixed(2)} 📏✨`, '📏');
+    }
+
+    function updateTimelineProjection() {
+      const slider = document.getElementById('rate-slider');
+      const rate = slider ? parseFloat(slider.value) : (appState.weeklyRate || 0.7);
+      appState.weeklyRate = rate;
+      saveAppState();
+
+      const currW = Number(appState.currentWeight) || 76.0;
+      const goalW = 60.0;
+      const diff = Math.max(0, currW - goalW);
+      const weeks = Math.max(1, Math.ceil(diff / rate));
+
+      const w4 = Math.max(goalW, currW - rate * 4).toFixed(1);
+      const w8 = Math.max(goalW, currW - rate * 8).toFixed(1);
+      const w14 = Math.max(goalW, currW - rate * 14).toFixed(1);
+
+      document.getElementById('rate-slider-display').textContent = `${rate.toFixed(2)} kg / week`;
+      document.getElementById('proj-total-weeks').textContent = String(weeks);
+      document.getElementById('proj-subtitle').textContent = `انطلاقاً من وزنك الحالي (${currW.toFixed(1)} kg) بوتيرة ${rate.toFixed(2)} kg/week`;
+      document.getElementById('milestone-w4').textContent = `${w4} kg`;
+      document.getElementById('milestone-w8').textContent = `${w8} kg`;
+      document.getElementById('milestone-w14').textContent = `${w14} kg`;
+      document.getElementById('milestone-goal').textContent = `60.0 kg`;
+    }
+
+    // ============================================================================
+    // 9. INITIALIZATION ON DOM READY
+    // ============================================================================
+    function initApp() {
+      updateAudioToggleUI();
+      renderWeightCard();
+      renderWaterStation();
+      renderDailyHabits();
+      renderStreakGrid();
+      renderMusclePills();
+      setHologramView(appState.hologramView || 'back');
+      setWorkoutPlaceMode(appState.workoutPlaceMode || 'gym');
+      renderMealsSwapper();
+      renderGroceryChecklist();
+      renderWeekSplit();
+      updateTimerUI();
+      renderCmMeasurements();
+      const slider = document.getElementById('rate-slider');
+      if (slider) slider.value = appState.weeklyRate || 0.7;
+      updateTimelineProjection();
+    }
+
+    document.addEventListener('DOMContentLoaded', initApp);
+  </script>
+  <script type="module" src="/src/index.ts"></script>
+</body>
+</html>
